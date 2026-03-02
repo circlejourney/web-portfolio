@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
-          <div id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-lg">
+          <div id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl">
             <div>
               <Image
                 src="/cj.svg"
@@ -53,7 +53,7 @@ export default function Home() {
 
             </div>
 
-            <div className="text-sm text-gray-500 pt-3 text-center">
+            <div className="text-sm text-gray-600 dark:text-gray-500 pt-3 text-center">
               Website created with React.JS, Next.JS and Tailwind CSS
             </div>
           </div>
@@ -67,12 +67,12 @@ export default function Home() {
             <Header icon={faHouse} header={"Home"}/>
             
             <div>
-              <p className="font-light text-gray-300">
+              <p className="font-light text-gray-700 dark:text-gray-300">
                 I'm Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
                 Currently, I am a contract-based web developer at <Link href="https://artfight.net">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, games and daily raffle mechanics.
               </p>
 
-              <div className="my-8 p-8 border border-gray-500 rounded-2xl text-gray-300">
+              <div className="my-8 p-8 border border-gray-500 rounded-2xl text-gray-700 dark:text-gray-300">
                 <p className="text-2xl">
                   Skills
                 </p>
@@ -107,7 +107,7 @@ export default function Home() {
 
             Here are some projects.
             <div className="py-4">
-              {projectList.map((project) => <Project project={project} setProject={setProject}/>)}
+              {projectList.map((project) => <Project project={project} setProject={setProject} key={project.title}/>)}
             </div>
           </div>
 

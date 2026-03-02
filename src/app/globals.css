@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #CAD2DA;
+  --background: #cfd7d9;
   --foreground: #171717;
-  --accent-bg: #7FABC6;
+  --accent-bg: rgb(149, 184, 197);
+  --link-colour: #a7620f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --background-image: url(/citylight.jpg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,8 +18,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #141B21;
+    --background-image: url(/city.jpg);
     --foreground: #ededed;
     --accent-bg: #24506B;
+    --link-colour: #d8874a;
   }
 }
 
@@ -28,7 +32,11 @@ body {
 }
 
 a {
-  color: #d8874a
+  color: var(--link-colour);
+}
+
+a.project-link {
+  color: #d8874a;
 }
 
 .bg-accent {
@@ -36,8 +44,7 @@ a {
 }
 
 #sidebar {
-  background-image: url(/city.jpg);
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
-  color: #ededed;
 }
