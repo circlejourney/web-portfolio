@@ -10,6 +10,7 @@ import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare, faHouse, faList } from "@fortawesome/free-solid-svg-icons";
+import Header from "../components/Header";
 
 export default function Home() {
   
@@ -18,9 +19,9 @@ export default function Home() {
   return (
       <main className="flex h-screen w-full flex-col md:flex-row items-stretch justify-between md:items-start">
 
-        <div className="w-full md:w-1/4 md:h-screen py-8 text-center px-6">
+        <div className="w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
-          <div className="h-full bg-stone-900 p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl">
+          <div id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-lg">
             <div>
               <Image
                 src="/cj.svg"
@@ -53,19 +54,17 @@ export default function Home() {
             </div>
 
             <div className="text-sm text-gray-500 pt-3 text-center">
-              Website created with React.JS and Next.JS
+              Website created with React.JS, Next.JS and Tailwind CSS
             </div>
           </div>
 
         </div>
         
-        <div id="scrollable" className="md:h-screen md:overflow-y-auto py-10 pl-20 pr-30 xs:w-full md:w-3/4 text-lg/10">
+        <div id="scrollable" className="md:h-screen md:overflow-y-auto md:py-10 pl-20 pr-30 xs:w-full md:w-3/4 text-lg/10">
 
           <div id="home" className="font-normal md:flex-row my-15">
             
-            <h2 className="text-4xl mb-6">
-              <FontAwesomeIcon icon={faHouse}/> Home
-            </h2>
+            <Header icon={faHouse} header={"Home"}/>
             
             <div>
               <p className="font-light text-gray-300">
@@ -103,9 +102,9 @@ export default function Home() {
 
           
           <div id="projects" className="font-normal md:flex-row my-15">
-            <h2 className="text-4xl mb-4">
-              <FontAwesomeIcon icon={faList}/> Projects
-            </h2>
+            
+            <Header icon={faList} header={"Projects"}/>
+
             Here are some projects.
             <div className="py-4">
               {projectList.map((project) => <Project project={project} setProject={setProject}/>)}
