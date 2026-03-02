@@ -39,4 +39,5 @@ a {
   background-image: url(/city.jpg);
   background-size: cover;
   background-position: center;
+  color: #ededed;
 }
