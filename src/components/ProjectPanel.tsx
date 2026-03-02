@@ -10,7 +10,7 @@ export default function ProjectPanel({project, setProject}: {
     setProject: Dispatch<SetStateAction<ProjectInterface | null>>
 }) {
     return (<>
-            <button onClick={()=>setProject(null)} className="absolute top-5 right-5">
+            <button onClick={()=>setProject(null)} className="absolute top-5 right-5 cursor-pointer">
                 <FontAwesomeIcon icon={faTimes}/>
             </button>
             

@@ -113,6 +113,8 @@ export default function Home() {
 
         </div>
         
+        <div className={`${project ? "bg-black/50" : "bg-black/0"} h-screen w-screen fixed transition-colors pointer-events-none`}></div>
+
         <div className={`fixed left-0 px-8 w-screen transition-all duration-400 ${project ? "h-screen py-8 top-0" : "h-0 p-0 top-1/2"}`}>
           <div className={`bg-accent rounded-2xl overflow-y-auto w-full px-8 ${project ? "h-full py-8" : "h-0"} relative transition-all duration-400`}>
             {project ? <ProjectPanel project={project} setProject={setProject} /> : null}
