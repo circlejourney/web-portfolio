@@ -17,7 +17,7 @@ export default function Home() {
   const [project, setProject] = useState<ProjectInterface|null>(null);
 
   return (
-      <main className="flex h-screen w-full flex-col md:flex-row items-stretch justify-between md:items-start">
+      <main className="flex h-screen w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
 
         <div className="w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
@@ -32,7 +32,7 @@ export default function Home() {
                 className="inline-block"
               />
 
-              <h1 className="font-medium leading-10 tracking-tight w-full">
+              <h1 className="font-medium leading-10 tracking-tight w-full text-gray-900 dark:text-gray-100">
                 <span className="text-3xl mr-2 inline-block">
                   Amari Low
                 </span>
@@ -67,12 +67,12 @@ export default function Home() {
             <Header icon={faHouse} header={"Home"}/>
             
             <div>
-              <p className="font-light text-gray-700 dark:text-gray-300">
+              <p className="font-light">
                 I'm Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
                 Currently, I am a contract-based web developer at <Link href="https://artfight.net">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, games and daily raffle mechanics.
               </p>
 
-              <div className="my-8 p-8 border border-gray-500 rounded-2xl text-gray-700 dark:text-gray-300">
+              <div className="my-8 p-8 border border-gray-500 rounded-2xl">
                 <p className="text-2xl">
                   Skills
                 </p>
