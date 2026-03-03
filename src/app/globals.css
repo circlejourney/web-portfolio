@@ -54,3 +54,8 @@ a.project-link {
   background-size: cover;
   background-position: center;
 }
+
+p, li {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}

@@ -50,6 +50,13 @@ export default function Home() {
                 <NavButton href="#home" handleClick={smoothScroll}>Home</NavButton>
                 <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
               </div>
+              
+              <div className="flex gap-2 mt-4 justify-center">
+                Find me at:
+                <Link href="https://www.linkedin.com/in/amari-l-29494b87/">LinkedIn</Link>
+                <Link href="https://github.com/circlejourney">Github</Link>
+                <Link href="https://circlejourney.net">Homepage</Link>
+              </div>
 
             </div>
 
@@ -68,7 +75,7 @@ export default function Home() {
             
             <div>
               <p className="font-light">
-                I'm Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
+                I&apos;m Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
                 Currently, I am a contract-based web developer at <Link href="https://artfight.net">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, games and daily raffle mechanics.
               </p>
 
@@ -79,13 +86,13 @@ export default function Home() {
 
                 <ul className="list-disc list-inside font-light">
                   <li className="mt-2">
-                    <span className="font-semibold">5+ years' experience</span> in PHP, MySQL, JavaScript, HTML, and CSS
+                    <span className="font-semibold">5+ years&apos; experience</span> in PHP, MySQL, JavaScript, HTML, and CSS
                   </li>
                   <li className="mt-2">
-                    <span className="font-semibold">2 years' experience</span> in Laravel, Typescript, React.JS, and Next.JS
+                    <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.JS, and Next.JS
                   </li>
                   <li className="mt-2">
-                    <span className="font-semibold">Research-backed, user-centred design:</span> In my PhD research project, I studied how to improve interaction design practices for affective connection at a distance.
+                    <span className="font-semibold">Research-backed, user-centred design:</span> In my PhD thesis project, I researched how to improve interaction design practices for affective connection at a distance.
                   </li>
                   <li className="mt-2">
                     <span className="font-semibold">Leadership and project management skills:</span> I am experienced in coordinating research and user-testing, managing projects with complex goals and deliverables, and motivating teams to achieve project objectives.
@@ -115,7 +122,7 @@ export default function Home() {
         <div className={`${project ? "bg-black/50" : "bg-black/0"} h-screen w-screen fixed transition-colors pointer-events-none`}></div>
 
         <div className={`fixed left-0 px-8 w-screen transition-all duration-400 ${project ? "h-screen py-8 top-0" : "h-0 p-0 top-1/2"}`}>
-          <div className={`bg-accent rounded-2xl overflow-y-auto w-full px-8 ${project ? "h-full py-8" : "h-0"} relative transition-all duration-400`}>
+          <div className={`bg-accent rounded-2xl overflow-y-auto w-full px-10 ${project ? "h-full py-10" : "h-0"} relative transition-all duration-400`}>
             {project ? <ProjectPanel project={project} setProject={setProject} /> : null}
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function ProjectPanel({project, setProject}: {
     setProject: Dispatch<SetStateAction<ProjectInterface | null>>
 }) {
     return (<>
-            <button onClick={()=>setProject(null)} className="absolute top-5 right-5 cursor-pointer">
+            <button onClick={()=>setProject(null)} className="fixed top-14 right-14 cursor-pointer">
                 <FontAwesomeIcon icon={faTimes}/>
             </button>
             
@@ -25,7 +25,7 @@ export default function ProjectPanel({project, setProject}: {
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2"/>
                 </a>
             </h2>
-            <div>
+            <div className="font-light">
                 {project.description}
             </div>
         </>);
