@@ -23,7 +23,7 @@ const projectList = [
             alt: ""
         }],
         position: "Web Developer (2025 - present)",
-        skills: "Laravel, PHP, Node.JS and NPM, Bootstrap",
+        skills: "Laravel, PHP, Node.JS + NPM, Bootstrap",
         short_description: "An annual online game where players draw art for others to earn points, with over 600,000 users.",
         description: (<>
             <p>
@@ -66,7 +66,7 @@ const projectList = [
                 alt: ""
         }],
         position: "Full-Stack Developer (2024 - present)",
-        skills: "Laravel, PHP, SASS, Node.JS and NPM with Vite package manager, Bootstrap",
+        skills: "Laravel, PHP, SASS, Node.JS + NPM + Vite, Bootstrap",
         short_description: "A game website centred around breeding, trading, customising, and questing with a coop of chickens.",
         description: (<>
             <p>I&apos;m the founder and full stack developer of ChickenPet, a game website centred around breeding, trading, customising, and going on adventures with chickens.</p>

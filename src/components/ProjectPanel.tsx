@@ -27,18 +27,17 @@ export default function ProjectPanel({project, setProject}: {
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2"/>
                 </a>
                 </div>
-                <div className="mb-2">
+                <div>
                     <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
+                </div>
+                <div className="font-light opacity-80">
+                    {project.skills}
                 </div>
             </div>
             
-            <div className="text-center">
+            <div className="text-center mb-4">
                 <Gallery images={project.gallery} />
             </div>
-
-            <BorderCard>
-                <InlineHeaderContent header="Skills">{project.skills}</InlineHeaderContent>
-            </BorderCard>
 
             <div className="font-light mt-6">
                 {project.description}

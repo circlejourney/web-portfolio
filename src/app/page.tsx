@@ -82,9 +82,9 @@ export default function Home() {
               </p>
 
               <BorderCard>
-                <p className="text-2xl">
+                <h3 className="text-2xl">
                   Skills
-                </p>
+                </h3>
 
                 <ul className="list-disc list-inside font-light">
                   <li>
