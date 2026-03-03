@@ -22,7 +22,7 @@ const projectList = [
             src: "/projects/ArtFight-5.jpg",
             alt: ""
         }],
-        position: "Web Developer",
+        position: "Web Developer (2025 - present)",
         skills: "Laravel, PHP, Node.JS and NPM, Bootstrap",
         short_description: "An annual online game where players draw art for others to earn points, with over 600,000 users.",
         description: (<>
@@ -65,7 +65,7 @@ const projectList = [
                 src: "/projects/ChickenPet-3.jpg",
                 alt: ""
         }],
-        position: "Full-Stack Developer",
+        position: "Full-Stack Developer (2024 - present)",
         skills: "Laravel, PHP, SASS, Node.JS and NPM with Vite package manager, Bootstrap",
         short_description: "A game website centred around breeding, trading, customising, and questing with a coop of chickens.",
         description: (<>
@@ -96,15 +96,15 @@ const projectList = [
         title: "Caring for the Carer",
         url: "https://caringforthecarer.org.au",
         thumbnail_src: "/projects/caringforthecarer.jpg",
-        position: "Web Designer",
+        position: "Web Designer (2025)",
         skills: "WordPress, PHP, jQuery",
         thumbnail_alt: "Caring for the Carer website screenshot",
         gallery: [{
             src: "/projects/caringforthecarer.jpg",
             alt: "Caring for the Carer website screenshot"
         }],
-        short_description: "A research-backed knowledge database for carers of patients with brain tumours.",
-        description: <>A research-backed knowledge database for carers of patients with brain tumours.</>
+        short_description: "A research-backed knowledge database for allies and supporters of patients with brain tumours.",
+        description: <>I was a contract web designer and developer for the Caring for the Carer project. Developed under a joined project by four Australian universities, this is a medical-research-backed knowledge database offering both pragmatic advice and mental wellness tips for allies and supporters of patients with brain tumours.</>
     },
 ] as ProjectInterface[];
 

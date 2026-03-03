@@ -19,17 +19,22 @@ export default function ProjectPanel({project, setProject}: {
                 <h2 className="text-4xl mb-2">
                     {project.title}
                 </h2>
-                <a href={project.url} target="cj-project" className="text-xl">
+                <div className="text-xl mb-1">
+                <a href={project.url} target="cj-project">
                     {project.url.replace("https://", "")}
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2"/>
                 </a>
+                </div>
+                <div className="mb-2">
+                    <b>Position</b> | <span className="font-light">{project.position}</span>
+                </div>
             </div>
             
             <div className="text-center">
                 <Gallery images={project.gallery} />
             </div>
 
-            <div className="font-light">
+            <div className="font-light mt-8">
                 {project.description}
             </div>
         </>);

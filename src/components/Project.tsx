@@ -18,7 +18,7 @@ export default function Project ({project, setProject}: {
                     {project.title}
                 </span>
             </h3>
-            <span className="text-gray-400 grow">
+            <span className="text-gray-300 grow">
                 {project.position}
             </span>
             <span className="text-gray-200 text-2xl">
