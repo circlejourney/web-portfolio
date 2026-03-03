@@ -47,8 +47,8 @@ export default function Home() {
 
 
               <div className="flex md:flex-col gap-2 mt-4 justify-center text-center">
-                <NavButton href="#home" ref="home" handleClick={smoothScroll}>Home</NavButton>
-                <NavButton href="#projects" ref="projects" handleClick={smoothScroll}>Projects</NavButton>
+                <NavButton href="#home" handleClick={smoothScroll}>Home</NavButton>
+                <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
               </div>
 
             </div>
@@ -124,8 +124,8 @@ export default function Home() {
       </main>
   );
     
-  function smoothScroll(ref: string) {
-    const element = document.getElementById(ref);
+  function smoothScroll(href: string) {
+    const element = document.querySelector(href) as HTMLElement;
     const parent = element?.closest('#scrollable');
     if (element && parent) {
       parent.scrollTo({
