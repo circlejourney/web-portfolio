@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import ProjectInterface from "../interfaces/ProjectInterface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Gallery from "./Gallery";
 
 export default function ProjectPanel({project, setProject}: {
     project: Project,
@@ -15,7 +16,7 @@ export default function ProjectPanel({project, setProject}: {
             </button>
             
             <div className="text-center">
-                <Image width="500" height="350" src={project.thumbnail_src} alt={project.thumbnail_alt} unoptimized={true} />
+                <Gallery images={project.gallery} />
             </div>
 
             <h2 className="text-2xl mt-4">
