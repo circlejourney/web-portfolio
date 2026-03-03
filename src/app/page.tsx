@@ -10,13 +10,17 @@ import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare, faHouse, faList } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/Header";
 import BorderCard from "../components/BorderCard";
+import Modal from "../components/Modal";
+import Lightbox from "../components/Lightbox";
+import ImageInterface from "../interfaces/ImageInterface";
 
 export default function Home() {
   
   const [project, setProject] = useState<ProjectInterface|null>(null);
+  const [viewingImage, setViewingImage] = useState<ImageInterface|null>(null);
 
   return (
       <main className="flex h-screen w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
@@ -111,7 +115,6 @@ export default function Home() {
 
           
           <div id="projects" className="font-normal md:flex-row my-15">
-            
             <Header icon={faList} header={"Projects"}/>
             
             <div className="py-4 flex flex-col gap-4">
@@ -121,13 +124,11 @@ export default function Home() {
 
         </div>
         
-        <div className={`${project ? "bg-black/50" : "bg-black/0"} h-screen w-screen fixed transition-colors pointer-events-none`}></div>
+        <Modal open={project !== null} closeCallback={setProject}>
+          {project ? <ProjectPanel project={project} setViewingImage={setViewingImage} /> : null}
+        </Modal>
 
-        <div className={`fixed left-0 px-8 w-screen transition-all duration-400 ${project ? "h-screen py-8 top-0" : "h-0 p-0 top-1/2"}`}>
-          <div className={`bg-accent rounded-2xl overflow-y-auto w-full px-10 ${project ? "h-full py-10" : "h-0"} relative transition-all duration-400`}>
-            {project ? <ProjectPanel project={project} setProject={setProject} /> : null}
-          </div>
-        </div>
+        <Lightbox open={viewingImage !== null} imageData={viewingImage} setViewingImage={setViewingImage}/>
 
       </main>
   );

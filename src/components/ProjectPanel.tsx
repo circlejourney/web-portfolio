@@ -1,22 +1,16 @@
-import Image from "next/image";
 import Project from "../interfaces/ProjectInterface";
 import { Dispatch, SetStateAction } from "react";
-import ProjectInterface from "../interfaces/ProjectInterface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Gallery from "./Gallery";
 import InlineHeaderContent from "./InlineHeaderContent";
-import BorderCard from "./BorderCard";
+import ImageInterface from "../interfaces/ImageInterface";
 
-export default function ProjectPanel({project, setProject}: {
+export default function ProjectPanel({project, setViewingImage}: {
     project: Project,
-    setProject: Dispatch<SetStateAction<ProjectInterface | null>>
+    setViewingImage: Dispatch<SetStateAction<ImageInterface | null>>
 }) {
     return (<>
-            <button onClick={()=>setProject(null)} className="fixed top-14 right-14 cursor-pointer">
-                <FontAwesomeIcon icon={faTimes}/>
-            </button>
-
             <div className="text-center mb-4">
                 <h2 className="text-4xl mb-2">
                     {project.title}
@@ -36,7 +30,7 @@ export default function ProjectPanel({project, setProject}: {
             </div>
             
             <div className="text-center mb-4">
-                <Gallery images={project.gallery} />
+                <Gallery images={project.gallery} setViewingImage={setViewingImage} />
             </div>
 
             <div className="font-light mt-6">

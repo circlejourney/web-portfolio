@@ -1,3 +1,5 @@
+import ImageInterface from "./ImageInterface";
+
 export default interface ProjectInterface {
     thumbnail_src: string,
     thumbnail_alt: string,
@@ -5,7 +7,7 @@ export default interface ProjectInterface {
     url: string,
     description: string|React.ReactNode,
     short_description: string,
-    gallery: { src: string, alt: string }[],
+    gallery: ImageInterface[],
     position: string,
     skills: string
 }
