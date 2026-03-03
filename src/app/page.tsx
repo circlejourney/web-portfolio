@@ -10,7 +10,9 @@ import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare, faHouse, faList } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/Header";
+import BorderCard from "../components/BorderCard";
 
 export default function Home() {
   
@@ -21,7 +23,7 @@ export default function Home() {
 
         <div className="w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
-          <div id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl">
+          <nav id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl">
             <div>
               <Image
                 src="/cj.svg"
@@ -51,11 +53,11 @@ export default function Home() {
                 <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
               </div>
               
-              <div className="flex flex-col md:flex-row gap-2 mt-4 justify-center">
-                Find me at:
-                <Link href="https://www.linkedin.com/in/amari-l-29494b87/">LinkedIn</Link>
-                <Link href="https://github.com/circlejourney">Github</Link>
-                <Link href="https://circlejourney.net">Homepage</Link>
+              <div className="mt-4 text-xl">
+                <span className="mr-2">Find me at</span>
+                <Link href="https://www.linkedin.com/in/amari-l-29494b87/"><FontAwesomeIcon icon={faLinkedin}/></Link>
+                <Link href="https://github.com/circlejourney"><FontAwesomeIcon icon={faGithub} /></Link>
+                <Link href="https://circlejourney.net"><FontAwesomeIcon icon={faHouse}/></Link>
               </div>
 
             </div>
@@ -63,7 +65,7 @@ export default function Home() {
             <div className="text-sm text-gray-600 dark:text-gray-500 pt-3 text-center">
               Website created with React.JS, Next.JS and Tailwind CSS
             </div>
-          </div>
+          </nav>
 
         </div>
         
@@ -75,33 +77,33 @@ export default function Home() {
             
             <div>
               <p className="font-light">
-                I&apos;m Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
+                I&apos;m Amari, a full stack web developer who loves making visually appealing, creativity-oriented and informative websites.
                 Currently, I am a contract-based web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
               </p>
 
-              <div className="my-8 p-8 border border-gray-500 rounded-2xl">
+              <BorderCard>
                 <p className="text-2xl">
                   Skills
                 </p>
 
                 <ul className="list-disc list-inside font-light">
-                  <li className="mt-2">
+                  <li>
                     <span className="font-semibold">5+ years&apos; experience</span> in PHP, MySQL, JavaScript, HTML, and CSS
                   </li>
-                  <li className="mt-2">
+                  <li>
                     <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.JS, and Next.JS
                   </li>
-                  <li className="mt-2">
+                  <li>
                     <span className="font-semibold">Research-backed, user-centred design:</span> In my PhD thesis project, I researched how to improve interaction design practices for affective connection at a distance.
                   </li>
-                  <li className="mt-2">
+                  <li>
                     <span className="font-semibold">Leadership and project management skills:</span> I am experienced in coordinating research and user-testing, managing projects with complex goals and deliverables, and motivating teams to achieve project objectives.
                   </li>
-                  <li className="mt-2">
+                  <li>
                     <span className="font-semibold">Motivated independent learner:</span> I am a self-taught web developer who is confident upskilling and learning new frameworks independently with minimal guidance.
                   </li>
                 </ul>
-              </div>
+              </BorderCard>
               
             </div>
 

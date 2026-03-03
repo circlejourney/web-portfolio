@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #cfd7d9;
-  --background-2: #b1bcbe;
+  --background: #e5ecee;
+  --background-2: #c8d0d4;
   --foreground: #171717;
-  --accent-bg: rgb(196, 209, 214);
-  --link-colour: #a7620f;
+  --accent-bg: #b9cad0;
+  --accent-bg-2: #c9d7dd;
+  --header: #24506B;
+  --link-colour: #9c5a2b;
 }
 
 @theme inline {
@@ -22,7 +24,9 @@
     --background-2: #0b0e11;
     --background-image: url(/city.jpg);
     --foreground: #ededed;
-    --accent-bg: #24506B;
+    --accent-bg: #223f52;
+    --accent-bg-2: #24506B;
+    --header: #5995a4;
     --link-colour: #d8874a;
   }
 }
@@ -37,12 +41,16 @@ a {
   color: var(--link-colour);
 }
 
-a.project-link {
+.accent-link {
   color: #d8874a;
 }
 
 .bg-accent {
-  background-color: var(--accent-bg);
+  background: linear-gradient(50deg, var(--accent-bg), var(--accent-bg-2));
+}
+
+.text-header {
+  color: var(--header);
 }
 
 .text-accent {

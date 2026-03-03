@@ -5,6 +5,8 @@ import ProjectInterface from "../interfaces/ProjectInterface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Gallery from "./Gallery";
+import InlineHeaderContent from "./InlineHeaderContent";
+import BorderCard from "./BorderCard";
 
 export default function ProjectPanel({project, setProject}: {
     project: Project,
@@ -26,7 +28,7 @@ export default function ProjectPanel({project, setProject}: {
                 </a>
                 </div>
                 <div className="mb-2">
-                    <b>Position</b> | <span className="font-light">{project.position}</span>
+                    <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
                 </div>
             </div>
             
@@ -34,7 +36,11 @@ export default function ProjectPanel({project, setProject}: {
                 <Gallery images={project.gallery} />
             </div>
 
-            <div className="font-light mt-8">
+            <BorderCard>
+                <InlineHeaderContent header="Skills">{project.skills}</InlineHeaderContent>
+            </BorderCard>
+
+            <div className="font-light mt-6">
                 {project.description}
             </div>
         </>);

@@ -30,9 +30,9 @@ const projectList = [
                 I am a seasonally-contracted web developer for Art Fight, an annual game where you earn points by drawing art of other users&apos; original characters. The game currently has over 600,000 users.
             </p>
             
-            <p className="text-xl mt-8 font-normal">
-                Features
-            </p>
+            <h3 className="text-xl mt-6 font-normal">
+                Features I developed
+            </h3>
 
             <ul className="list-disc list-inside">
                 <li>
@@ -73,9 +73,9 @@ const projectList = [
             <p>
                 Outside of developing and maintaining features, I also manage DevOps for ChickenPet and moderate site content.
             </p>
-            <p className="text-xl mt-8 font-normal">
-                Features
-            </p>
+            <h3 className="text-xl mt-6 font-normal">
+                Features I developed
+            </h3>
             <ul className="list-disc list-inside">
                 <li>
                     <b>Genetics system:</b> ChickenPet&apos;s central mechanic is its genetics system. Chickens have colour and trait genes that are inherited by offspring in complex relations. Some genes are recessive and can only be hatched by parents with specific genes.
@@ -104,7 +104,30 @@ const projectList = [
             alt: "Caring for the Carer website screenshot"
         }],
         short_description: "A research-backed knowledge database for allies and supporters of patients with brain tumours.",
-        description: <>I was a contract web designer and developer for the Caring for the Carer project. Developed under a joined project by four Australian universities, this is a medical-research-backed knowledge database offering both pragmatic advice and mental wellness tips for allies and supporters of patients with brain tumours.</>
+        description: (<>
+            <p>
+                I was a contract web designer and developer for the <i>Caring for the Carer project</i>. Developed under a joint research project by four Australian universities, this is a research-backed knowledge database offering both pragmatic advice and mental wellness tips for allies and supporters of patients with brain tumours.
+            </p>
+            <p>
+                The website was built in WordPress, incorporating feedback from user-testing studies. Clarity and approachability were prioritised to ensure that users experienced as little friction as possible while searching for information about an oftentimes difficult experience.
+            </p>
+            
+            <h3 className="text-xl mt-6 font-normal">
+                Features I developed
+            </h3>
+            
+            <ul className="list-disc list-inside">
+                <li>
+                    <b>Navigation utilities:</b> I wrote custom scripts in the WordPress PHP templating engine to render links that allow users to navigate back and forth between pages, allowing for easy browsing between pages.
+                </li>
+                <li>
+                    <b>Context-sensitive navigation menu:</b> I programmed the sidebar navigation menu to allow users to toggle various website sections open and closed, making the large number of pages more approachable and facilitating users in not getting lost.
+                </li>
+                <li>
+                    <b>UI and content uplift:</b> I revised the website&apos;s user interface and content to reduce the density of medical information and communicate it effectively with colours, text boxes, and graphics, facilitating an approachable reading experience for lay users.
+                </li>
+            </ul>
+        </>)
     },
 ] as ProjectInterface[];
 
