@@ -9,7 +9,7 @@ import ProjectInterface from "../interfaces/ProjectInterface";
 import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare, faHouse, faList } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faHouse, faRectangleList } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/Header";
 import BorderCard from "../components/BorderCard";
@@ -98,13 +98,13 @@ export default function Home() {
                     <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.JS, and Next.JS
                   </li>
                   <li>
-                    <span className="font-semibold">Research-backed, user-centred design:</span> In my PhD thesis project, I researched how to improve interaction design practices for affective connection at a distance.
+                    <span className="font-semibold">Research-backed, user-centred design:</span> I&apos;ve conducted PhD research into improving interaction design practices for affective connection.
                   </li>
                   <li>
-                    <span className="font-semibold">Leadership and project management skills:</span> I am experienced in coordinating research and user-testing, managing projects with complex goals and deliverables, and motivating teams to achieve project objectives.
+                    <span className="font-semibold">Leadership and project management skills:</span> I have experience coordinating research, user-testing, and projects with complex goals and deliverables.
                   </li>
                   <li>
-                    <span className="font-semibold">Motivated independent learner:</span> I am a self-taught web developer who is confident upskilling and learning new frameworks independently with minimal guidance.
+                    <span className="font-semibold">Motivated independent learner:</span> As a self-taught web developer, I&apos;m confident upskilling and learning frameworks independently with minimal guidance.
                   </li>
                 </ul>
               </BorderCard>
@@ -115,7 +115,7 @@ export default function Home() {
 
           
           <div id="projects" className="font-normal md:flex-row my-15">
-            <Header icon={faList} header={"Projects"}/>
+            <Header icon={faRectangleList} header={"Projects"}/>
             
             <div className="py-4 flex flex-col gap-4">
               {projectList.map((project) => <Project project={project} setProject={setProject} key={project.title}/>)}
