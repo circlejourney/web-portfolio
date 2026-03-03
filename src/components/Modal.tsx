@@ -15,7 +15,7 @@ export default function Modal({open, children, closeCallback, edgePadding="8", b
         <div className={`fixed left-0 px-${edgePadding} w-screen transition-all duration-400 ${open ? `h-screen py-${edgePadding} top-0` : "h-0 p-0 top-1/2"}`}>
             <div className={`${backgroundClass} rounded-2xl overflow-y-auto w-full px-10 ${open ? "h-full py-10" : "h-0"} relative transition-all duration-400`}>        
                 {open ?
-                    (<button onClick={()=>closeCallback(null)} className="absolute top-5 right-5 cursor-pointer">
+                    (<button onClick={()=>closeCallback(null)} className="fixed top-4 right-4 cursor-pointer">
                         <FontAwesomeIcon icon={faTimes}/>
                     </button>)
                     : null}
