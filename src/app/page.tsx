@@ -104,9 +104,8 @@ export default function Home() {
           <div id="projects" className="font-normal md:flex-row my-15">
             
             <Header icon={faList} header={"Projects"}/>
-
-            Here are some projects.
-            <div className="py-4">
+            
+            <div className="py-4 flex flex-col gap-4">
               {projectList.map((project) => <Project project={project} setProject={setProject} key={project.title}/>)}
             </div>
           </div>

@@ -45,6 +45,10 @@ a.project-link {
   background-color: var(--accent-bg);
 }
 
+.text-accent {
+  color: var(--link-colour);
+}
+
 #sidebar {
   background-image: var(--background-image);
   background-size: cover;
