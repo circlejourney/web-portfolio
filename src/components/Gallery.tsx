@@ -9,7 +9,7 @@ export default function Gallery({images, setViewingImage}: {
         {images.map(
             image =>
                 <button className="md:basis-1/4 box-border cursor-pointer" key={image.src} onClick={(e)=>setViewingImage(image)}>
-                    <Image className="scale-95 hover:scale-100 transition-transform" src={image.src} alt={image.alt} width={500} height={350} />
+                    <Image className="scale-95 hover:scale-100 transition-transform rounded-md" src={image.src} alt={image.alt} width={500} height={350} />
                 </button>
         )}
     </div>)

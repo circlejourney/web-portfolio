@@ -38,18 +38,18 @@ export default function Home() {
                 className="inline-block"
               />
 
-              <h1 className="font-medium leading-10 tracking-tight w-full text-gray-900 dark:text-gray-100">
-                <span className="text-3xl mr-2 inline-block">
+              <h1 className="font-medium tracking-tight w-full text-gray-900 dark:text-gray-100 mb-4">
+                <span className="text-3xl inline-block">
                   Amari Low
                 </span>
                 <span className="text-lg inline-block">
-                  (Circlejourney)
+                  (Also known as Circlejourney)
                 </span>
               </h1>
               
-              <p>
-                Full stack web developer specialising in playful, creative, and research-centred websites
-              </p>
+              <div className="mb-5">
+                Full stack web developer specialising in creative and research-centred websites
+              </div>
 
 
               <div className="flex md:flex-col gap-2 mt-4 justify-center text-center">
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
 
             <div className="text-sm text-gray-600 dark:text-gray-500 pt-3 text-center">
-              Website created with React.JS, Next.JS and Tailwind CSS
+              Website created with React.js, Next.js and TailwindCSS
             </div>
           </nav>
 
@@ -85,17 +85,13 @@ export default function Home() {
                 Currently, I am a contract-based web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
               </p>
 
-              <BorderCard>
-                <h3 className="text-2xl">
-                  Skills
-                </h3>
-
+              <BorderCard className="text-[15px] leading-8 mx-4 my-8" header="Skills">
                 <ul className="list-disc list-inside font-light">
                   <li>
                     <span className="font-semibold">5+ years&apos; experience</span> in PHP, MySQL, JavaScript, HTML, and CSS
                   </li>
                   <li>
-                    <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.JS, and Next.JS
+                    <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.js, and Next.js
                   </li>
                   <li>
                     <span className="font-semibold">Research-backed, user-centred design:</span> I&apos;ve conducted PhD research into improving interaction design practices for affective connection.

@@ -64,6 +64,6 @@ a {
 }
 
 p, li {
-  margin-block-start: 0.5rem;
-  margin-block-end: 0.5rem;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
