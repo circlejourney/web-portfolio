@@ -5,5 +5,7 @@ export default interface ProjectInterface {
     url: string,
     description: string|React.ReactNode,
     short_description: string,
-    gallery: { src: string, alt: string }[]
+    gallery: { src: string, alt: string }[],
+    position: string,
+    skills: string
 }

@@ -14,17 +14,21 @@ export default function ProjectPanel({project, setProject}: {
             <button onClick={()=>setProject(null)} className="fixed top-14 right-14 cursor-pointer">
                 <FontAwesomeIcon icon={faTimes}/>
             </button>
+
+            <div className="text-center mb-4">
+                <h2 className="text-4xl mb-2">
+                    {project.title}
+                </h2>
+                <a href={project.url} target="cj-project" className="text-xl">
+                    {project.url.replace("https://", "")}
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2"/>
+                </a>
+            </div>
             
             <div className="text-center">
                 <Gallery images={project.gallery} />
             </div>
 
-            <h2 className="text-2xl mt-4">
-                <a href={project.url} target="cj-project">
-                    {project.title}
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ms-2"/>
-                </a>
-            </h2>
             <div className="font-light">
                 {project.description}
             </div>

@@ -51,7 +51,7 @@ export default function Home() {
                 <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
               </div>
               
-              <div className="flex gap-2 mt-4 justify-center">
+              <div className="flex flex-col md:flex-row gap-2 mt-4 justify-center">
                 Find me at:
                 <Link href="https://www.linkedin.com/in/amari-l-29494b87/">LinkedIn</Link>
                 <Link href="https://github.com/circlejourney">Github</Link>
@@ -67,7 +67,7 @@ export default function Home() {
 
         </div>
         
-        <div id="scrollable" className="md:h-screen md:overflow-y-auto md:py-10 pl-20 pr-30 xs:w-full md:w-3/4 text-lg/10">
+        <div id="scrollable" className="md:h-screen md:overflow-y-auto md:py-10 pl-20 pr-30 xs:w-full md:w-3/4 text-[16px]/10">
 
           <div id="home" className="font-normal md:flex-row my-15">
             
@@ -76,7 +76,7 @@ export default function Home() {
             <div>
               <p className="font-light">
                 I&apos;m Amari, a full stack web developer who specialises in producing visually stunning, creativity-oriented and informative websites.
-                Currently, I am a contract-based web developer at <Link href="https://artfight.net">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, games and daily raffle mechanics.
+                Currently, I am a contract-based web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
               </p>
 
               <div className="my-8 p-8 border border-gray-500 rounded-2xl">
