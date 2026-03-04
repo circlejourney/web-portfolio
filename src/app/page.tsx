@@ -16,6 +16,7 @@ import BorderCard from "../components/BorderCard";
 import Modal from "../components/Modal";
 import Lightbox from "../components/Lightbox";
 import ImageInterface from "../interfaces/ImageInterface";
+import InlineHeaderContent from "../components/InlineHeaderContent";
 
 export default function Home() {
   
@@ -38,11 +39,11 @@ export default function Home() {
                 className="inline-block"
               />
 
-              <h1 className="font-medium tracking-tight w-full text-gray-900 dark:text-gray-100 mb-4">
-                <span className="text-3xl inline-block">
+              <h1 className="w-full text-gray-900 dark:text-gray-100 mb-4">
+                <span className="text-4xl font-bold inline-block tracking-wide uppercase text-header">
                   Amari Low
                 </span>
-                <span className="text-lg inline-block">
+                <span className="text-lg inline-block font-medium">
                   (Also known as Circlejourney)
                 </span>
               </h1>
