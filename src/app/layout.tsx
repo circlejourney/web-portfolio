@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 const lexend = Lexend({
@@ -18,12 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${lexend.className} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <Suspense fallback={<Loading/>}>
+      <html lang="en">
+        <body
+          className={`${lexend.className} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    </Suspense>
   );
 }
