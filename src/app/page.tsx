@@ -9,7 +9,7 @@ import ProjectInterface from "../interfaces/ProjectInterface";
 import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare, faHouse, faRectangleList } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faEnvelope, faHouse, faRectangleList } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/Header";
 import BorderCard from "../components/BorderCard";
@@ -52,9 +52,10 @@ export default function Home() {
               </div>
 
 
-              <div className="flex md:flex-col gap-2 mt-4 justify-center text-center">
+              <div className="flex md:flex-col flex-wrap gap-2 mt-4 justify-center text-center">
                 <NavButton href="#home" handleClick={smoothScroll}>Home</NavButton>
                 <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
+                <NavButton href="#contact" handleClick={smoothScroll}>Contact Me</NavButton>
               </div>
               
               <div className="mt-4 text-xl">
@@ -116,6 +117,23 @@ export default function Home() {
             <div className="py-4 flex flex-col gap-4">
               {projectList.map((project) => <Project project={project} setProject={setProject} key={project.title}/>)}
             </div>
+          </div>
+
+          
+          
+          <div id="contact" className="font-normal md:flex-row my-15">
+            <Header icon={faEnvelope} header={"Contact Me"}/>
+            
+              <ul className="list-inside list-disc">
+                <li>
+                  <InlineHeaderContent header="Email">circlejourneyart@gmail.com</InlineHeaderContent>
+                </li>
+                <li>
+                  <InlineHeaderContent header="LinkedIn">
+                    <Link href="https://www.linkedin.com/in/amari-l-29494b87/" target="linkedin">linkedin.com/in/amari-l-29494b87 <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>
+                  </InlineHeaderContent>
+                </li>
+              </ul>
           </div>
 
         </div>
