@@ -5,7 +5,8 @@ import { Dispatch, SetStateAction } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 import ProjectInterface from "../interfaces/ProjectInterface";
-import Badge from "./Badge";
+import { Badge, UnderlineBadge } from "./Badge";
+import StatBar from "./StatBar";
 
 export default function Project ({project, setProject}: {
     project: ProjectInterface,
@@ -25,8 +26,9 @@ export default function Project ({project, setProject}: {
             <div className="text-gray-900 dark:text-gray-50 text-sm mt-2 opacity-100 group-hover:opacity-80 transition-all duration-200">
                 {project.short_description}
             </div>
-            <div className="font-light text-gray-700 dark:text-gray-300 mt-2">
-                {project.skills.split(/,\s*/).map( skill => <Badge className="mr-2" key={skill}>{skill}</Badge> )}
+            <div className="font-light text-gray-700 dark:text-gray-300 mt-4">
+                {project.stats ? <StatBar stats={project.stats}/> : null}
+                {project.skills.split(/,\s*/).map( skill => <UnderlineBadge className="mr-2" key={skill}>{skill}</UnderlineBadge> )}
             </div>
         </div>
         

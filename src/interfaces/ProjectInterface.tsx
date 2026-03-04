@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import ImageInterface from "./ImageInterface";
 
 export default interface ProjectInterface {
@@ -10,5 +11,6 @@ export default interface ProjectInterface {
     gallery: ImageInterface[],
     position: string,
     skills: string,
-    client?: string
+    client?: string,
+    stats?: ReactNode[]
 }

@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectInterface from "../interfaces/ProjectInterface";
+import { faEye, faStar, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const projectList = [
     {
@@ -16,6 +18,7 @@ const projectList = [
                 src: "/projects/ChickenPet-3.jpg",
                 alt: ""
         }],
+        stats: [ <>1,500 <FontAwesomeIcon icon={faUser}/></> ],
         position: "Full-Stack Developer (2024 - present)",
         skills: "Laravel, PHP, SASS, Node.JS + NPM, HTML, Git",
         short_description: "A game website centred around breeding, trading, and going on adventures with pet chickens.",
@@ -66,7 +69,8 @@ const projectList = [
         }],
         position: "Web Developer (2025 - present)",
         client: "Art Fight LLC",
-        skills: "Laravel, PHP, Node.JS + NPM, Bootstrap, HTML, CSS, Git",
+        stats: [ <>600,000 <FontAwesomeIcon icon={faUser}/></> ],
+        skills: "Laravel, PHP, Node.JS + NPM, HTML, CSS, Git",
         short_description: "An annual online game where players draw art for each other to earn points.",
         description: (<>
             <p>
@@ -132,20 +136,21 @@ const projectList = [
         </>)
     },
     {
-        title: "TH Live Code Editor",
+        title: "Live Code Editor",
         url: "https://th.circlejourney.net",
         thumbnail_src: "/projects/THEditor-1.jpg",
         position: "Web Developer (2020 - present)",
         skills: "PHP, jQuery, HTML, CSS",
+        stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
         thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
         gallery: [{
             src: "/projects/THEditor-1.jpg",
             alt: "Caring for the Carer website screenshot"
         }],
-        short_description: "A HTML + CSS editor with live visual preview that helps beginner coders customise Toyhouse pages.",
+        short_description: "A HTML/CSS editor with live visual preview, helping beginner coders customise Toyhouse pages.",
         description: (<>
             <p>
-                I created the Toyhouse Live Code Editor, a HTML and CSS editor with a live visual preview that helps beginner coders create pages for the Toyhouse website.
+                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a live visual preview that helps beginner coders create pages for the Toyhouse website.
             </p>
             <p>
                 Toyhouse is a creativity-focused website that lets users customise their pages using HTML and CSS. However, many users are unfamiliar with these coding languages. This tool is designed to help those users create visually appealing pages and learn how to code by displaying a live-refreshing preview of their HTML and CSS.

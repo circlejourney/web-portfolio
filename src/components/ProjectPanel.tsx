@@ -7,6 +7,7 @@ import InlineHeaderContent from "./InlineHeaderContent";
 import ImageInterface from "../interfaces/ImageInterface";
 import BorderCard from "./BorderCard";
 import Image from "next/image";
+import StatBar from "./StatBar";
 
 export default function ProjectPanel({project, setViewingImage}: {
     project: Project,
@@ -28,10 +29,11 @@ export default function ProjectPanel({project, setViewingImage}: {
                 <div className="text-xl mb-1">
                 </div>
 
-                <div className="mb-4 text-lg text-slate-600 dark:text-slate-400 md:max-w-2/3 md:text-right">
-                    {project.short_description}
-                </div>
+            <div className="mb-4 text-slate-600 dark:text-slate-400 md:max-w-1/2 md:text-right">
+                {project.short_description}
+                {project.stats ? <div className="mt-2"><StatBar stats={project.stats}/></div> : null}
             </div>
+        </div>
 
             <div className="mb-4">
                 <div className="p-3 bg-gray-400 dark:bg-gray-600 rounded-xl">
