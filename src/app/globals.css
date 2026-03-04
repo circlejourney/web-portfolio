@@ -45,6 +45,10 @@ a {
   color: #d8874a;
 }
 
+.bg-foreground {
+  background-color: var(--foreground);
+}
+
 .bg-accent {
   background: linear-gradient(50deg, var(--accent-bg), var(--accent-bg-2));
 }
@@ -54,7 +58,7 @@ a {
 }
 
 .text-accent {
-  color: var(--link-colour);
+  color: var(--accent-bg);
 }
 
 #sidebar {

@@ -4,7 +4,7 @@ const projectList = [
     {
         title: "Art Fight",
         url: "https://artfight.net",
-        thumbnail_src: "/projects/ArtFight-4.jpg",
+        thumbnail_src: "/projects/ArtFight-1.jpg",
         thumbnail_alt: "Screenshot of the Art Fight website",
         gallery: [{
             src: "/projects/ArtFight-1.jpg",
@@ -23,11 +23,12 @@ const projectList = [
             alt: ""
         }],
         position: "Web Developer (2025 - present)",
+        client: "Art Fight LLC",
         skills: "Laravel, PHP, Node.JS + NPM, Bootstrap",
-        short_description: "An annual online game where players draw art for others to earn points, with over 600,000 users.",
+        short_description: "An annual online game where players draw art for each other to earn points.",
         description: (<>
             <p>
-                I am a seasonally-contracted web developer for Art Fight, an annual game where you earn points by drawing art of other users&apos; original characters. The game currently has over 600,000 users.
+                I am a seasonally-contracted web developer for Art Fight, an annual game where you earn points by drawing art of other users&apos; original characters. The game currently has over 600,000 users and is rapidly growing.
             </p>
             
             <h3 className="text-xl mt-6 font-normal">
@@ -67,7 +68,7 @@ const projectList = [
         }],
         position: "Full-Stack Developer (2024 - present)",
         skills: "Laravel, PHP, SASS, Node.JS + NPM + Vite, Bootstrap",
-        short_description: "A game website centred around breeding, trading, customising, and questing with a coop of chickens.",
+        short_description: "A game website centred around breeding, trading, and going on adventures with pet chickens.",
         description: (<>
             <p>I&apos;m the founder and full stack developer of ChickenPet, a game website centred around breeding, trading, customising, and going on adventures with chickens.</p>
             <p>
@@ -98,6 +99,7 @@ const projectList = [
         thumbnail_src: "/projects/caringforthecarer.jpg",
         position: "Web Designer (2025)",
         skills: "WordPress, PHP, jQuery",
+        client: "Queensland University of Technology",
         thumbnail_alt: "Caring for the Carer website screenshot",
         gallery: [{
             src: "/projects/caringforthecarer.jpg",

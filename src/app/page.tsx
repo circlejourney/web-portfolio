@@ -66,7 +66,7 @@ export default function Home() {
 
             </div>
 
-            <div className="text-sm text-gray-600 dark:text-gray-500 pt-3 text-center">
+            <div className="text-sm text-gray-600 dark:text-gray-400 pt-3 text-center">
               Website created with React.js, Next.js and TailwindCSS
             </div>
           </nav>

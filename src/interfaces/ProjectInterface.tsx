@@ -9,5 +9,6 @@ export default interface ProjectInterface {
     short_description: string,
     gallery: ImageInterface[],
     position: string,
-    skills: string
+    skills: string,
+    client?: string
 }

@@ -8,7 +8,7 @@ export default function Lightbox({imageData, open, setViewingImage}: {
     open: boolean,
     setViewingImage: Dispatch<SetStateAction<ImageInterface | null>>
 }) {
-    return (<Modal backgroundClass="bg-stone-900" edgePadding="10" open={open} closeCallback={setViewingImage}>
+    return (<Modal backgroundClass="bg-stone-900" edgePadding="12" open={open} closeCallback={setViewingImage}>
         {imageData? <Image className="w-full" src={imageData.src} width={800} height={494} alt={imageData.alt} /> : null }
     </Modal>);
 }

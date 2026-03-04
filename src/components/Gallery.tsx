@@ -5,7 +5,7 @@ export default function Gallery({images, setViewingImage}: {
     images: { src: string, alt: string,  }[],
     setViewingImage: Dispatch<SetStateAction<{src: string, alt: string} | null>>
 }) {
-    return (<div className="flex flex-col md:flex-row flex-wrap justify-center gap-1 p-3 bg-gray-400 dark:bg-gray-600 rounded-xl">
+    return (<div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-1 p-3 bg-gray-400 dark:bg-gray-600 rounded-xl">
         {images.map(
             image =>
                 <button className="md:basis-1/4 box-border cursor-pointer" key={image.src} onClick={(e)=>setViewingImage(image)}>

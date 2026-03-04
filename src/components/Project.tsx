@@ -5,6 +5,7 @@ import { Dispatch, SetStateAction } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 import ProjectInterface from "../interfaces/ProjectInterface";
+import Badge from "./Badge";
 
 export default function Project ({project, setProject}: {
     project: ProjectInterface,
@@ -23,8 +24,11 @@ export default function Project ({project, setProject}: {
             </div>
             <div className="text-gray-900 dark:text-gray-50 text-sm mt-2 opacity-100 group-hover:opacity-80 transition-all duration-200">
                 {project.short_description}
-                <br/>
-                <span className="font-light text-gray-700 dark:text-gray-300">{project.skills}</span>
+            </div>
+            <div>
+                <span className="font-light text-gray-700 dark:text-gray-300 mt-2">
+                    {project.skills.split(/,\s*/).map( skill => <Badge className="mr-2" key={skill}>{skill}</Badge> )}
+                </span>
             </div>
         </div>
         

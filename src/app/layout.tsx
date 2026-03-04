@@ -11,7 +11,7 @@ const lexend = Lexend({
 
 export const metadata: Metadata = {
   title: "Amari Low: Web developer",
-  description: "Amari Low is a full stack web developer specialising in Laravel, PHP, React.JS and Next.JS.",
+  description: "Amari Low is a full stack web developer specialising in Laravel, PHP, React.js and Next.js.",
 };
 
 export default function RootLayout({
