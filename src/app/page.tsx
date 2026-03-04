@@ -73,16 +73,16 @@ export default function Home() {
 
         </div>
         
-        <div id="scrollable" className="md:h-screen md:overflow-y-auto md:py-10 pl-20 pr-30 xs:w-full md:w-3/4 text-[16px]/10">
+        <div id="scrollable" className="md:h-screen md:overflow-y-auto px-6 md:py-10 md:pl-20 md:pr-30 w-full md:w-3/4">
 
-          <div id="home" className="font-normal md:flex-row my-15">
+          <div id="home" className="font-normal md:flex-row md:my-15">
             
             <Header icon={faHouse} header={"Home"}/>
             
-            <div>
+            <div className="text-[16px]/10">
               <p className="font-light">
                 I&apos;m Amari, a full stack web developer who loves making visually appealing, creativity-oriented and informative websites.
-                Currently, I am a contract-based web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
+                Currently, I am a web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
               </p>
 
               <BorderCard className="text-[15px] leading-8 mx-4 my-8" header="Skills">
