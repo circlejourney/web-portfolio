@@ -138,13 +138,13 @@ const projectList = [
     {
         title: "Live Code Editor",
         url: "https://th.circlejourney.net",
-        thumbnail_src: "/projects/THEditor-1.jpg",
+        thumbnail_src: "/projects/THeditor-1.jpg",
         position: "Web Developer (2020 - present)",
         skills: "PHP, jQuery, HTML, CSS",
         stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
         thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
         gallery: [{
-            src: "/projects/THEditor-1.jpg",
+            src: "/projects/THeditor-1.jpg",
             alt: "Caring for the Carer website screenshot"
         }],
         short_description: "A HTML/CSS editor with live visual preview, helping beginner coders customise Toyhouse pages.",

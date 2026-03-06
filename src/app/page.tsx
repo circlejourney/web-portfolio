@@ -24,9 +24,9 @@ export default function Home() {
   const [viewingImage, setViewingImage] = useState<ImageInterface|null>(null);
 
   return (
-      <main className="flex h-screen w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
+      <main className="flex w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
 
-        <div className="w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
+        <div className="md:sticky md:top-0 w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
           <nav id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl">
             <div>
@@ -75,7 +75,7 @@ export default function Home() {
 
         </div>
         
-        <div id="scrollable" className="md:h-screen md:overflow-y-auto px-6 md:py-10 md:pl-20 md:pr-30 w-full md:w-3/4">
+        <div id="scrollable" className="px-6 md:py-10 md:pl-20 md:pr-30 w-full md:w-3/4">
 
           <div id="home" className="font-normal md:flex-row md:my-15">
             
@@ -150,9 +150,8 @@ export default function Home() {
     
   function smoothScroll(href: string) {
     const element = document.querySelector(href) as HTMLElement;
-    const parent = element?.closest('#scrollable');
     if (element && parent) {
-      parent.scrollTo({
+      scrollTo({
         top: element.offsetTop - 50,
         behavior: 'smooth',
       })
