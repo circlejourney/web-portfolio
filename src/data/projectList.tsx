@@ -6,7 +6,7 @@ const projectList = [
     {
         title: "ChickenPet",
         url: "https://chicken.pet",
-        thumbnail_src: "/projects/ChickenPet-1.jpg",
+        thumbnail_src: "/projects/ChickenPet-thumb.jpg",
         thumbnail_alt: "ChickenPet dashboard page",
         gallery: [{
                 src: "/projects/ChickenPet-1.jpg",
@@ -27,7 +27,7 @@ const projectList = [
             <p>
                 Outside of developing and maintaining features, I also manage DevOps for ChickenPet and moderate site content.
             </p>
-            <h3 className="text-xl mt-6 font-normal">
+            <h3 className="text-xl mt-6 font-medium">
                 Features I developed
             </h3>
             <ul className="list-disc list-inside">
@@ -49,7 +49,7 @@ const projectList = [
     {
         title: "Art Fight",
         url: "https://artfight.net",
-        thumbnail_src: "/projects/ArtFight-1.jpg",
+        thumbnail_src: "/projects/ArtFight-thumb.jpg",
         thumbnail_alt: "Screenshot of the Art Fight website",
         gallery: [ {
             src: "/projects/ArtFight-3.jpg",
@@ -77,7 +77,7 @@ const projectList = [
                 I am a seasonally-contracted web developer for Art Fight, an annual game where you earn points by drawing art of other users&apos; original characters. The game currently has over 600,000 users and is rapidly growing.
             </p>
             
-            <h3 className="text-xl mt-6 font-normal">
+            <h3 className="text-xl mt-6 font-medium">
                 Features I developed
             </h3>
 
@@ -100,11 +100,11 @@ const projectList = [
     {
         title: "Caring for the Carer",
         url: "https://caringforthecarer.org.au",
-        thumbnail_src: "/projects/caringforthecarer.jpg",
+        thumbnail_src: "/projects/caringforthecarer-thumb.jpg",
+        thumbnail_alt: "Caring for the Carer website screenshot",
         position: "Web Designer (2025)",
         skills: "WordPress, PHP, jQuery, HTML, CSS",
         client: "Queensland University of Technology",
-        thumbnail_alt: "Caring for the Carer website screenshot",
         gallery: [{
             src: "/projects/caringforthecarer.jpg",
             alt: "Caring for the Carer website screenshot"
@@ -118,7 +118,7 @@ const projectList = [
                 The website was built in WordPress, incorporating feedback from user-testing studies. Clarity and approachability were prioritised to ensure that users experienced as little friction as possible while searching for information about an oftentimes difficult experience.
             </p>
             
-            <h3 className="text-xl mt-6 font-normal">
+            <h3 className="text-xl mt-6 font-medium">
                 Features I developed
             </h3>
             
@@ -138,10 +138,10 @@ const projectList = [
     {
         title: "Live Code Editor",
         url: "https://th.circlejourney.net",
-        thumbnail_src: "/projects/THeditor-1.jpg",
+        thumbnail_src: "/projects/THeditor-thumb.jpg",
+        thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
         skills: "PHP, jQuery, HTML, CSS",
         stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
-        thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
         gallery: [{
             src: "/projects/THeditor-1.jpg",
             alt: "Caring for the Carer website screenshot"
@@ -155,7 +155,7 @@ const projectList = [
                 Toyhouse is a creativity-focused website that lets users customise their pages using HTML and CSS. However, many users are unfamiliar with these coding languages. This tool is designed to help those users create visually appealing pages and learn how to code by displaying a live-refreshing preview of their HTML and CSS.
             </p>
             
-            <h3 className="text-xl mt-6 font-normal">
+            <h3 className="text-xl mt-6 font-medium">
                 Features I developed
             </h3>
             
@@ -175,9 +175,9 @@ const projectList = [
     {
         title: "Interactive Commission Estimates",
         url: "https://circlejourney.net/commissions",
-        thumbnail_src: "/projects/comms-1.jpg",
-        skills: "React.js, HTML, CSS, PHP",
+        thumbnail_src: "/projects/comms-thumb.jpg",
         thumbnail_alt: "Screenshot of interactive commission estimates app",
+        skills: "React.js, HTML, CSS, PHP",
         gallery: [{
             src: "/projects/comms-1.jpg",
             alt: "Screenshot of interactive commission estimates app"
@@ -195,7 +195,7 @@ const projectList = [
                 This tool showcases my artwork to entice viewers while also providing inormation about pricing in various currencies.
             </p>
             
-            <h3 className="text-xl mt-6 font-normal">
+            <h3 className="text-xl mt-6 font-medium">
                 Features I developed
             </h3>
             
