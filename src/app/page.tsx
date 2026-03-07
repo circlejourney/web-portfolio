@@ -17,6 +17,7 @@ import Modal from "../components/Modal";
 import Lightbox from "../components/Lightbox";
 import ImageInterface from "../interfaces/ImageInterface";
 import InlineHeaderContent from "../components/InlineHeaderContent";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   

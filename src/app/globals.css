@@ -41,7 +41,7 @@ a {
   color: var(--link-colour);
 }
 
-.accent-link {
+.text-link {
   color: #d8874a;
 }
 
@@ -70,4 +70,8 @@ a {
 p, li {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
+}
+
+.project-card {
+  text-align: left;
 }
