@@ -13,7 +13,7 @@ export default function ProjectPanel({project, setViewingImage}: {
     project: Project,
     setViewingImage: Dispatch<SetStateAction<ImageInterface | null>>
 }) {
-    return (<div className="py-4 px-12">
+    return (<div className="md:py-4 md:px-12">
         <div className="mb-4 text-center flex flex-col md:flex-row justify-between items-center">
             <h2 className="mb-2 bg-foreground rounded-xl px-4 py-2 inline-block mr-3">
                 <span className="text-4xl text-accent">
@@ -62,7 +62,7 @@ export default function ProjectPanel({project, setViewingImage}: {
             : null }
         </div>
 
-        <div className="font-light mb-8 text-lg">
+        <div className="font-light mb-8 text-lg mx-4">
             {project.description}
             
             { project.features ? <>
