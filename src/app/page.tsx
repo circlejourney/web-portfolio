@@ -151,7 +151,7 @@ export default function Home() {
         </Modal>
         
         <Modal open={project !== null} closeCallback={()=>setProject(null)}>
-          {project ? <ProjectPanel project={project} setViewingImage={()=>setViewingImage(null)} /> : null}
+          {project ? <ProjectPanel project={project} setViewingImage={setViewingImage} /> : null}
         </Modal>
 
         <Lightbox open={viewingImage !== null} imageData={viewingImage} setViewingImage={setViewingImage}/>

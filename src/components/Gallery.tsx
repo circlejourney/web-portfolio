@@ -8,7 +8,7 @@ export default function Gallery({images, setViewingImage}: {
     return (<div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-1 p-3 bg-gray-400 dark:bg-gray-600 rounded-xl">
         {images.map(
             image =>
-                <button className="md:basis-1/4 box-border cursor-pointer" key={image.src} onClick={(e)=>setViewingImage(image)}>
+                <button className="md:basis-1/4 box-border cursor-pointer" key={image.src} onClick={()=>{setViewingImage(image)}}>
                     <Image className="scale-95 hover:scale-100 transition-transform rounded-md shadow-sm" src={image.src} alt={image.alt} width={500} height={350} />
                 </button>
         )}
