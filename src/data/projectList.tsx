@@ -107,7 +107,7 @@ const projectList = [
         short_description: "A research-backed knowledge database for allies and supporters of patients with brain tumours.",
         description: (<>
             <p>
-                I was a contract web designer and developer for <i>Caring for the Carer</i>. Created under a joint research project by four Australian universities, this research-backed knowledge database offers both pragmatic advice and mental wellness tips for allies and supporters of patients with brain tumours. Built in WordPress, it incorporates feedback from user-testing studies, offering users an approachable, frictionless experience while looking up information about an oftentimes difficult experience.
+                I was contracted as a web designer and developer for <i>Caring for the Carer</i>, a joint research project by four Australian universities. This knowledge database offers both pragmatic advice and mental wellness tips for carers of patients with brain tumours. Built in WordPress, it incorporates feedback from user-testing studies, offering users an approachable, frictionless experience while looking up information about an oftentimes difficult experience.
             </p>
         </>),
         features: <ul className="list-disc list-inside">
@@ -135,13 +135,11 @@ const projectList = [
             src: "/projects/THeditor-1.jpg",
             alt: "Caring for the Carer website screenshot"
         }],
-        short_description: "A HTML/CSS editor with live visual preview, helping beginner coders customise Toyhouse pages.",
+        short_description: "A HTML/CSS editor with live visual preview, helping coders customise Toyhouse webpages.",
         description: (<>
             <p>
-                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a live visual preview that helps beginner coders create pages for Toyhouse.
-            </p>
-            <p>
-                Toyhouse is a creativity-focused website that lets users customise their pages using HTML and CSS; many users are unfamiliar with these coding languages. This tool is designed to help them create visually rich pages by displaying a live-refreshing preview of their HTML and CSS.
+                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a live visual preview that helps coders design webpages for Toyhouse.
+                Toyhouse is a creativity-focused website that lets users (often unfamiliar with code) customise their pages using HTML and CSS. This tool is designed to help users create visually rich pages with a live-refreshing preview of their code.
             </p>
         </>),
         features: <ul className="list-disc list-inside">
@@ -196,12 +194,28 @@ const projectList = [
     {
         title: "Circlejourney: Homepage",
         url: "https://circlejourney.net",
-        skills: "PHP, HTML, CSS, JavaScript + jQuery",
+        skills: "Laravel, PHP, HTML, CSS, JavaScript + jQuery",
         thumbnail_src: "/projects/homepage-thumb.jpg",
         thumbnail_alt: "Screenshot of my homepage",
         short_description: "My homepage, serving as a hub for all my work in web development, creative coding, art, music, and more.",
         description: <>
-            <p>My homepage showcases my works across many mediums: web development, creative coding, visual art, animation, music production, writing, and so on.</p>
+            <p>
+                My homepage showcases my works across many mediums: web development, creative coding, visual art, animation, music production, and writing. It has a <a href="https://new.circlejourney.net/search">Search feature</a> with an index built using a bespoke crawler.
+            </p>
+        </>
+    },
+    {
+        title: "Transplacial Playground",
+        url: "https://place.circlejourney.net",
+        skills: "Laravel, PHP, HTML, CSS, JavaScript + jQuery, Cytoscape.js",
+        thumbnail_src: "/projects/Transplaces-thumb.jpg",
+        thumbnail_alt: "Screenshot of Mapping Transplaces",
+        short_description: "The co-creative interactive works emerging from my PhD research.",
+        create: "2023",
+        description: <>
+            <p>
+                The interactive outputs of my PhD thesis, which looked at designing digital spaces for affective connection at a distance. For my thesis, I reimagined technologies like websites and maps to create a sense of being in the same place and playing together. These interactive apps explore the concept of &ldquo;transplace&rdquo;: places formed when expressive, persistent, and synchronous technologies scaffold affective connections.
+            </p>
         </>
     }
 ] as ProjectInterface[];

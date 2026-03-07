@@ -123,7 +123,7 @@ export default function Home() {
             <div className="py-4 flex flex-col gap-4">
               {highlightProjects.map((project) => <Project project={project} key={project.title} setProject={setProject} />)}
               <ProjectCard className="text-2xl order-2 wrap-break-word" onClick={()=>setProjectListOpen(true)}>
-                View all projects
+                View all projects ({projectList.length})
               </ProjectCard>
             </div>
           </div>
