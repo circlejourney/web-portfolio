@@ -18,11 +18,15 @@ import Lightbox from "../components/Lightbox";
 import ImageInterface from "../interfaces/ImageInterface";
 import InlineHeaderContent from "../components/InlineHeaderContent";
 import ProjectCard from "../components/ProjectCard";
+import AllProjects from "../components/AllProjects";
 
 export default function Home() {
   
   const [project, setProject] = useState<ProjectInterface|null>(null);
   const [viewingImage, setViewingImage] = useState<ImageInterface|null>(null);
+  const [projectListOpen, setProjectListOpen] = useState<boolean>(false);
+
+  const highlightProjects = projectList.filter(project => project.highlight);
 
   return (
       <main className="flex w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
@@ -117,10 +121,12 @@ export default function Home() {
             <Header icon={faRectangleList} header={"Projects"}/>
             
             <div className="py-4 flex flex-col gap-4">
-              {projectList.map((project) => <Project project={project} setProject={setProject} key={project.title}/>)}
+              {highlightProjects.map((project) => <Project project={project} key={project.title} setProject={setProject} />)}
+              <ProjectCard className="text-2xl order-2 wrap-break-word" onClick={()=>setProjectListOpen(true)}>
+                View all projects
+              </ProjectCard>
             </div>
           </div>
-
           
           
           <div id="contact" className="font-normal md:flex-row my-15">
@@ -140,8 +146,12 @@ export default function Home() {
 
         </div>
         
-        <Modal open={project !== null} closeCallback={setProject}>
-          {project ? <ProjectPanel project={project} setViewingImage={setViewingImage} /> : null}
+        <Modal open={projectListOpen} closeCallback={()=>setProjectListOpen(false)}>
+          <AllProjects projectList={projectList} />
+        </Modal>
+        
+        <Modal open={project !== null} closeCallback={()=>setProject(null)}>
+          {project ? <ProjectPanel project={project} setViewingImage={()=>setViewingImage(null)} /> : null}
         </Modal>
 
         <Lightbox open={viewingImage !== null} imageData={viewingImage} setViewingImage={setViewingImage}/>

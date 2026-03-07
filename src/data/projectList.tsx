@@ -6,6 +6,7 @@ const projectList = [
     {
         title: "ChickenPet",
         url: "https://chicken.pet",
+        highlight: true,
         thumbnail_src: "/projects/ChickenPet-thumb.jpg",
         thumbnail_alt: "ChickenPet dashboard page",
         gallery: [{
@@ -20,7 +21,7 @@ const projectList = [
         }],
         stats: [ <>1,500 <FontAwesomeIcon icon={faUser}/></> ],
         position: "Full-Stack Developer (2024 - present)",
-        skills: "Laravel, PHP, SASS, Node.JS + NPM, HTML, Git",
+        skills: "Laravel, PHP, SASS, Node.js + NPM, HTML, Git",
         short_description: "A game website centred around breeding, trading, and going on adventures with pet chickens.",
         description: (<>
             <p>I&apos;m the founder and full stack developer of ChickenPet, a game website centred around breeding, trading, customising, and going on adventures with chickens.</p>
@@ -49,6 +50,7 @@ const projectList = [
     {
         title: "Art Fight",
         url: "https://artfight.net",
+        highlight: true,
         thumbnail_src: "/projects/ArtFight-thumb.jpg",
         thumbnail_alt: "Screenshot of the Art Fight website",
         gallery: [ {
@@ -100,10 +102,11 @@ const projectList = [
     {
         title: "Caring for the Carer",
         url: "https://caringforthecarer.org.au",
+        highlight: true,
         thumbnail_src: "/projects/caringforthecarer-thumb.jpg",
         thumbnail_alt: "Caring for the Carer website screenshot",
         position: "Web Designer (2025)",
-        skills: "WordPress, PHP, jQuery, HTML, CSS",
+        skills: "WordPress, PHP, JavaScript + jQuery, HTML, CSS",
         client: "Queensland University of Technology",
         gallery: [{
             src: "/projects/caringforthecarer.jpg",
@@ -138,6 +141,7 @@ const projectList = [
     {
         title: "Live Code Editor",
         url: "https://th.circlejourney.net",
+        highlight: true,
         thumbnail_src: "/projects/THeditor-thumb.jpg",
         thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
         skills: "PHP, jQuery, HTML, CSS",
@@ -175,6 +179,7 @@ const projectList = [
     {
         title: "Interactive Commission Estimates",
         url: "https://circlejourney.net/commissions",
+        highlight: true,
         thumbnail_src: "/projects/comms-thumb.jpg",
         thumbnail_alt: "Screenshot of interactive commission estimates app",
         skills: "React.js, HTML, CSS, PHP",
@@ -212,6 +217,17 @@ const projectList = [
             </ul>
         </>)
     },
+    {
+        title: "Circlejourney: Homepage",
+        url: "circlejourney.net",
+        skills: "PHP, HTML, CSS, JavaScript + jQuery",
+        thumbnail_src: "/projects/homepage-thumb.jpg",
+        thumbnail_alt: "Screenshot of my homepage",
+        short_description: "My homepage, serving as a hub for all my work in web development, creative coding, art, music, and more.",
+        description: <>
+            <p>My homepage showcases my works across many mediums: web development, creative coding, visual art, animation, music production, writing, and so on.</p>
+        </>
+    }
 ] as ProjectInterface[];
 
 export default projectList;
