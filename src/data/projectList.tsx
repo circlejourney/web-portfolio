@@ -89,7 +89,7 @@ const projectList = [
                     <b>Modmail templates:</b> I implemented a feature allowing moderators to create and edit message templates, facilitating quick responses to frequently asked questions and common rules infractions.
                 </li>
                 <li>
-                    <b>Custom CSS for character profiles:</b> I created a system allowing users to add custom CSS to their uploaded characters. Users can view a live visual preview showing them how CSS changes affect profile appearace. CSS was sanitised with a custom blacklist before being applied.
+                    <b>Custom CSS for character profiles:</b> I created a system allowing users to add custom CSS to their uploaded characters. Users can view a live visual preview showing them how CSS changes affect profile appearance. CSS was sanitised with a custom blacklist before being applied.
                 </li>
                 <li>
                     <b>Discovery features:</b> I created a new search feature for finding users, characters, and artwork, as well as randomisers that help users discover new friends and characters to draw.
