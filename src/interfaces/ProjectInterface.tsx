@@ -9,7 +9,7 @@ export default interface ProjectInterface {
     description: string|React.ReactNode,
     short_description: string,
     gallery: ImageInterface[],
-    position: string,
+    position?: string,
     skills: string,
     client?: string,
     stats?: ReactNode[]

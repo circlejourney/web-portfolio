@@ -42,9 +42,10 @@ export default function ProjectPanel({project, setViewingImage}: {
         </div>
 
         <div className="flex flex-col md:flex-row gap-1 mb-6">
-            <BorderCard className="grow md:basis-0 text-center md:text-left">
-                <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
-            </BorderCard>
+            { project.position?
+                <BorderCard className="grow md:basis-0 text-center md:text-left">
+                    <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
+                </BorderCard> : null }
 
             <BorderCard className="grow md:basis-0 text-center md:text-left">
                 <InlineHeaderContent header="Skills">

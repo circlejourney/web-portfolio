@@ -139,7 +139,6 @@ const projectList = [
         title: "Live Code Editor",
         url: "https://th.circlejourney.net",
         thumbnail_src: "/projects/THeditor-1.jpg",
-        position: "Web Developer (2020 - present)",
         skills: "PHP, jQuery, HTML, CSS",
         stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
         thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
@@ -169,6 +168,46 @@ const projectList = [
                 </li>
                 <li>
                     <b>Customisable, accessible code editor UI:</b> The code editor provides several layouts, docking the editor in different parts of the screen, popping the preview out into a separate window. It also offers light, dark, low-contrast and large-text modes for accessibility.
+                </li>
+            </ul>
+        </>)
+    },
+    {
+        title: "Interactive Commission Estimates",
+        url: "https://circlejourney.net/commissions",
+        thumbnail_src: "/projects/comms-1.jpg",
+        skills: "React.js, HTML, CSS, PHP",
+        thumbnail_alt: "Screenshot of interactive commission estimates app",
+        gallery: [{
+            src: "/projects/comms-1.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        },{
+            src: "/projects/comms-2.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        },{
+            src: "/projects/comms-3.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        }],
+        short_description: "An interactive art commission pricing estimate generator made with React.js.",
+        description: (<>
+            <p>
+                As a freelance artist, I created this web application for clients to view instant estimates for my art services before contacting me to order.
+                This tool showcases my artwork to entice viewers while also providing inormation about pricing in various currencies.
+            </p>
+            
+            <h3 className="text-xl mt-6 font-normal">
+                Features I developed
+            </h3>
+            
+            <ul className="list-disc list-inside">
+                <li>
+                    <b>Currency conversion with Exchange Rate API:</b> Since my clients are based in different countries, the app is integrated with the Exchange Rate API to support previewing prices in different home currencies. API results are cached daily via my website&apos;s PHP backend to reduce the number of API requests.
+                </li>
+                <li>
+                    <b>Image preview lightbox:</b> To allow users to art samples at a larger size as well as browse through collections of samples for the same styles, I implemented a lightbox that is easily scrollable.
+                </li>
+                <li>
+                    <b>&ldquo;Order now&rdquo; link:</b> When an art style is selected, the app generates a convenient hyperlink that autofills the PHP-based commission inquiry form on my website.
                 </li>
             </ul>
         </>)
