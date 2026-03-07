@@ -62,8 +62,15 @@ export default function ProjectPanel({project, setViewingImage}: {
             : null }
         </div>
 
-        <div className="font-light mb-4 text-lg">
+        <div className="font-light mb-8 text-lg">
             {project.description}
+            
+            { project.features ? <>
+                <h3 className="text-xl mt-6 font-medium">
+                    Features I developed
+                </h3>
+                {project.features}
+            </> : null }
         </div>
         
         {

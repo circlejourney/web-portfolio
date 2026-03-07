@@ -20,9 +20,14 @@ export default function Project ({project, setProject}: {
                 <h3 className="text-3xl order-2 wrap-break-word">
                     {project.title}
                 </h3>
+                { project.position ? 
                 <div className="text-gray-700 dark:text-gray-300 opacity-80 grow order-4 lg:order-3">
                     {project.position}
-                </div>
+                </div> : null }
+                { project.created ? 
+                <div className="text-gray-700 dark:text-gray-300 opacity-80 grow order-4 lg:order-3">
+                    (Initiated in {project.created})
+                </div> : null }
             </div>
             <div className="text-gray-900 dark:text-gray-50 text-sm mt-2 opacity-100 group-hover:opacity-80 transition-all duration-200">
                 {project.short_description}
