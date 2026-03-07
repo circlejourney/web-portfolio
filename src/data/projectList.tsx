@@ -107,7 +107,7 @@ const projectList = [
         short_description: "A research-backed knowledge database for allies and supporters of patients with brain tumours.",
         description: (<>
             <p>
-                I was contracted as a web designer and developer for <i>Caring for the Carer</i>, a joint research project by four Australian universities. This knowledge database offers both pragmatic advice and mental wellness tips for carers of patients with brain tumours. Built in WordPress, it incorporates feedback from user-testing studies, offering users an approachable, frictionless experience while looking up information about an oftentimes difficult experience.
+                I was a contract web designer/developer for <i>Caring for the Carer</i>, a joint research project by four Australian universities. This knowledge database offers medical information and pragmatic advice for carers of patients with brain tumours. Built in WordPress, it incorporates feedback from user-testing studies, offering an approachable, frictionless experience while browsing medical and administrative resources.
             </p>
         </>),
         features: <ul className="list-disc list-inside">
@@ -138,8 +138,8 @@ const projectList = [
         short_description: "A HTML/CSS editor with live visual preview, helping coders customise Toyhouse webpages.",
         description: (<>
             <p>
-                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a live visual preview that helps coders design webpages for Toyhouse.
-                Toyhouse is a creativity-focused website that lets users (often unfamiliar with code) customise their pages using HTML and CSS. This tool is designed to help users create visually rich pages with a live-refreshing preview of their code.
+                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a visual preview window that helps coders design webpages for Toyhouse.
+                Toyhouse is a creativity-focused website where users (often unfamiliar with code) may customise webpages with HTML and CSS. With a live-refreshing preview code, this tool helps users create visually rich pages.
             </p>
         </>),
         features: <ul className="list-disc list-inside">
@@ -211,10 +211,24 @@ const projectList = [
         thumbnail_src: "/projects/Transplaces-thumb.jpg",
         thumbnail_alt: "Screenshot of Mapping Transplaces",
         short_description: "The co-creative interactive works emerging from my PhD research.",
-        create: "2023",
+        created: "2023",
         description: <>
             <p>
-                The interactive outputs of my PhD thesis, which looked at designing digital spaces for affective connection at a distance. For my thesis, I reimagined technologies like websites and maps to create a sense of being in the same place and playing together. These interactive apps explore the concept of &ldquo;transplace&rdquo;: places formed when expressive, persistent, and synchronous technologies scaffold affective connections.
+                In my PhD thesis, I looked at designing digital spaces for affective connection at a distance, I reimagining technologies like websites and maps to create a sense of being in the same place and playing together. These interactive apps explore the concept of &ldquo;transplace&rdquo; which my thesis posits: places formed when expressive, persistent, and synchronous technologies scaffold affective connections.
+            </p>
+        </>
+    },
+    {
+        title: "MiniReader",
+        url: "http://github.com/circlejourney/minireader",
+        skills: "PHP, HTML, CSS, JavaScript + jQuery, Cytoscape.js",
+        thumbnail_src: "/projects/MiniReader-thumb.jpg",
+        thumbnail_alt: "Screenshot of MiniReader",
+        short_description: "A minimalistic PHP templater for self-publishing stories.",
+        created: "2023",
+        description: <>
+            <p>
+                This templating framework was created for individuals with low to moderate familiarity with HTML and PHP to self-publish novels and short fiction. Configured with JSON files with written content added with HTML, it runs out of the box on any PHP server.
             </p>
         </>
     }

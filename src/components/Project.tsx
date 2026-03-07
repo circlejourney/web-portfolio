@@ -17,7 +17,7 @@ export default function Project ({project, setProject}: {
         <div>
             <div className="flex flex-row items-center flex-wrap gap-3">
                 <Image className="inline-block order-1" width={100} height={62} src={project.thumbnail_src} alt={project.thumbnail_alt} unoptimized={true}/>
-                <h3 className="text-3xl order-2 wrap-break-word">
+                <h3 className="text-2xl order-2 wrap-break-word">
                     {project.title}
                 </h3>
                 { project.position ? 
