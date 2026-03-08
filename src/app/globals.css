@@ -75,3 +75,8 @@ p, li {
 .project-card {
   text-align: left;
 }
+
+.gallery-image {
+  width: auto;
+  max-height: 250px;
+}

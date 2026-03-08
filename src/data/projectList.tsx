@@ -192,11 +192,43 @@ const projectList = [
             </ul>
     },
     {
+        title: "OzCHI Conference Website",
+        url: "https://ozchi.org",
+        skills: "PHP, HTML, CSS, JavaScript + jQuery",
+        thumbnail_src: "/projects/OzCHI-thumb.jpg",
+        thumbnail_alt: "Screenshot of OzCHI 2025 website",
+        position: "Web and Social Media Chair (2024 - present)",
+        highlight: true,
+        short_description: "The official website of the Australian Conference on Human-Computer Interaction.",
+        description: <>
+            <p>
+                As a Web and Social Media chair for OzCHI since 2024, I have been in charge of designing, developing, and maintaining the website as its hub of information for presenters and attendees. I liaise with other conference chairs to ensure all information is up-to-date and accurate, and I design layouts that present lots of information concisely.
+            </p>
+        </>,
+        gallery: [{
+            src: "/projects/OzCHI-2.jpg",
+            alt: "Screenshot of OzCHI 2025 website"
+        },{
+            src: "/projects/OzCHI-1.jpg",
+            alt: "Screenshot of OzCHI 2025 website in mobile view"
+        },{
+            src: "/projects/OzCHI-5.jpg",
+            alt: "Screenshot of OzCHI 2025 website"
+        },{
+            src: "/projects/OzCHI-3.jpg",
+            alt: "Screenshot of OzCHI 2024 website"
+        },{
+            src: "/projects/OzCHI-4.jpg",
+            alt: "Screenshot of OzCHI 2024 website"
+        }]
+    },
+    {
         title: "Circlejourney: Homepage",
         url: "https://circlejourney.net",
         skills: "Laravel, PHP, HTML, CSS, JavaScript + jQuery",
         thumbnail_src: "/projects/homepage-thumb.jpg",
         thumbnail_alt: "Screenshot of my homepage",
+        created: "2016  ",
         short_description: "My homepage, serving as a hub for all my work in web development, creative coding, art, music, and more.",
         description: <>
             <p>
@@ -214,21 +246,21 @@ const projectList = [
         created: "2023",
         description: <>
             <p>
-                In my PhD thesis, I looked at designing digital spaces for affective connection at a distance, I reimagining technologies like websites and maps to create a sense of being in the same place and playing together. These interactive apps explore the concept of &ldquo;transplace&rdquo; which my thesis posits: places formed when expressive, persistent, and synchronous technologies scaffold affective connections.
+                In my PhD thesis, I explored designing digital spaces for affective connection at a distance, I reimagining technologies like websites and maps to create a sense of being in the same place and playing together. These interactive apps explore the concept of &ldquo;transplace&rdquo; which my thesis posits: places formed when expressive, persistent, and synchronous technologies scaffold affective connections.
             </p>
         </>
     },
     {
         title: "MiniReader",
         url: "http://github.com/circlejourney/minireader",
-        skills: "PHP, HTML, CSS, JavaScript + jQuery, Cytoscape.js",
+        skills: "PHP, HTML, CSS, JavaScript + jQuery",
         thumbnail_src: "/projects/MiniReader-thumb.jpg",
         thumbnail_alt: "Screenshot of MiniReader",
         short_description: "A minimalistic PHP templater for self-publishing stories.",
         created: "2023",
         description: <>
             <p>
-                This templating framework was created for individuals with low to moderate familiarity with HTML and PHP to self-publish novels and short fiction. Configured with JSON files with written content added with HTML, it runs out of the box on any PHP server.
+                This templating framework was created for individuals with low to moderate familiarity with HTML and PHP to self-publish novels and short fiction. Configured with JSON files with written content added with HTML, it runs out of the box on a PHP server. It provides a single-page view of all chapters and a dark and light mode colour theme toggles.
             </p>
         </>
     }
