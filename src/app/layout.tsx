@@ -22,9 +22,7 @@ export default function RootLayout({
   return (
     <Suspense fallback={<Loading/>}>
       <html lang="en">
-        <body
-          className={`${lexend.className} antialiased`}
-        >
+        <body className={`${lexend.className} antialiased`}>
           {children}
         </body>
       </html>

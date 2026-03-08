@@ -18,13 +18,20 @@ import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Projects from "../sections/Projects";
 import Home from "../sections/Home";
+import { Bungee } from "next/font/google";
+
+const bungee = Bungee({
+  subsets: ["latin-ext"],
+  weight: "400"
+});
+
+const highlightProjects = projectList.filter(project => project.highlight);
 
 export default function App() {
   
   const [project, setProject] = useState<ProjectInterface|null>(null);
   const [viewingImage, setViewingImage] = useState<ImageInterface|null>(null);
   const [projectListOpen, setProjectListOpen] = useState<boolean>(false);
-  const highlightProjects = projectList.filter(project => project.highlight);
 
   return (
       <main className="flex w-full flex-col md:flex-row items-stretch justify-between md:items-start text-gray-700 dark:text-gray-300">
@@ -39,11 +46,10 @@ export default function App() {
                 width={100}
                 height={20}
                 priority
-                className="inline-block"
-              />
+                className="inline-block" />
 
               <h1 className="w-full text-gray-900 dark:text-gray-100 mb-4">
-                <span className="text-4xl font-bold inline-block tracking-wide uppercase text-header">
+                <span  className={`${bungee.className} text-4xl inline-block tracking-wide uppercase text-header`}>
                   Amari Low
                 </span>
                 <span className="text-lg inline-block font-medium">
