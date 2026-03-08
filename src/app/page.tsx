@@ -38,7 +38,7 @@ export default function App() {
 
         <div className="md:sticky md:top-0 w-auto md:w-1/4 md:h-screen py-8 mx-9 md:mr-0 text-center">
           
-          <nav id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl">
+          <nav id="sidebar" className="h-full w-full p-6 flex flex-col justify-between rounded-top-5xl rounded-3xl shadow-xl overflow-auto">
             <div>
               <Image
                 src="/cj.svg"
@@ -46,18 +46,18 @@ export default function App() {
                 width={100}
                 height={20}
                 priority
-                className="inline-block" />
+                className="inline-block h-[10vh]" />
 
               <h1 className="w-full text-gray-900 dark:text-gray-100 mb-4">
-                <span  className={`${bungee.className} text-4xl inline-block tracking-wide uppercase text-header`}>
+                <span  className={`${bungee.className} text-3xl lg:text-4xl inline-block tracking-wide uppercase text-header`}>
                   Amari Low
                 </span>
-                <span className="text-lg inline-block font-medium">
+                <span className="text-base lg:text-lg inline-block font-medium">
                   (Also known as Circlejourney)
                 </span>
               </h1>
               
-              <div className="mb-5">
+              <div className="mb-5 text-sm lg:text-base">
                 I build delightful, performant websites for researchers, creatives, and social communities.
               </div>
 
