@@ -4,47 +4,6 @@ import { faEye, faStar, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const projectList = [
     {
-        title: "ChickenPet",
-        url: "https://chicken.pet",
-        highlight: true,
-        thumbnail_src: "/projects/ChickenPet-thumb.jpg",
-        thumbnail_alt: "ChickenPet dashboard page",
-        gallery: [{
-                src: "/projects/ChickenPet-1.jpg",
-                alt: "ChickenPet dashboard page"
-            }, {
-                src: "/projects/ChickenPet-2.jpg",
-                alt: ""
-            }, {
-                src: "/projects/ChickenPet-3.jpg",
-                alt: ""
-        }],
-        stats: [ <>1,500 <FontAwesomeIcon icon={faUser}/></> ],
-        position: "Full-Stack Developer (2024 - present)",
-        skills: "Laravel, PHP, SASS, Node.js + NPM, HTML, Git",
-        short_description: "A game website centred around breeding, trading, and going on adventures with pet chickens.",
-        description: (<>
-            <p>I&apos;m the founder and full stack developer of ChickenPet, a game website centred around breeding, trading, customising, and going on adventures with chickens.</p>
-            <p>
-                Outside of developing and maintaining features, I also manage DevOps for ChickenPet and moderate site content.
-            </p>
-        </>),
-        features: <ul className="list-disc list-inside">
-            <li>
-                <b>Genetics system:</b> ChickenPet&apos;s central mechanic is its genetics system. Chickens have colour and trait genes that are inherited by offspring in complex relations. Some genes are recessive and can only be hatched by parents with specific genes.
-            </li>
-            <li>
-                <b>Social features:</b> ChickenPet has a public marketplace, forums, chicken-trading, and raffle mechanics that allow players to trade chickens and items.
-            </li>
-            <li>
-                <b>Moderation and developer ticket tools:</b> ChickenPet has robust tools for moderation and curating the play experience, such as a ticket system for reporting bugs, a dev tracker, user blocking features that wrap site functions, and an upcoming authorisation list feature for fine-tuning access to shop listings.
-            </li>
-            <li>
-                <b>Minigames:</b> ChickenPet has a minigames.  Minigames incorporate members of the user&apos;s coop and affect other site functions like shop prices. Among these games, players can bring chickens on adventures, organise heists to steal currency, and find missings chicken on a tile board.
-            </li>
-        </ul>
-    },
-    {
         title: "Art Fight",
         url: "https://artfight.net",
         highlight: true,
@@ -123,76 +82,48 @@ const projectList = [
         </ul>
     },
     {
-        title: "Live Code Editor",
-        url: "https://th.circlejourney.net",
-        created: "2020",
+        title: "ChickenPet",
+        url: "https://chicken.pet",
         highlight: true,
-        thumbnail_src: "/projects/THeditor-thumb.jpg",
-        thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
-        skills: "PHP, jQuery, HTML, CSS",
-        stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
+        thumbnail_src: "/projects/ChickenPet-thumb.jpg",
+        thumbnail_alt: "ChickenPet dashboard page",
         gallery: [{
-            src: "/projects/THeditor-1.jpg",
-            alt: "Caring for the Carer website screenshot"
+                src: "/projects/ChickenPet-1.jpg",
+                alt: "ChickenPet dashboard page"
+            }, {
+                src: "/projects/ChickenPet-2.jpg",
+                alt: ""
+            }, {
+                src: "/projects/ChickenPet-3.jpg",
+                alt: ""
         }],
-        short_description: "A HTML/CSS editor with live visual preview, helping coders customise Toyhouse webpages.",
+        stats: [ <>1,500 <FontAwesomeIcon icon={faUser}/></> ],
+        position: "Full-Stack Developer (2024 - present)",
+        skills: "Laravel, PHP, SASS, Node.js + NPM, HTML, Git",
+        short_description: "A game website centred around breeding, trading, and going on adventures with pet chickens.",
         description: (<>
+            <p>I&apos;m the founder and full stack developer of ChickenPet, a game website centred around breeding, trading, customising, and going on adventures with chickens.</p>
             <p>
-                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a visual preview window that helps coders design webpages for Toyhouse.
-                Toyhouse is a creativity-focused website where users (often unfamiliar with code) may customise webpages with HTML and CSS. With a live-refreshing preview code, this tool helps users create visually rich pages.
+                Outside of developing and maintaining features, I also manage DevOps for ChickenPet and moderate site content.
             </p>
         </>),
         features: <ul className="list-disc list-inside">
-                <li>
-                    <b>Live code preview:</b> The preview frame refreshes with the user&apos;s latest code after the user idles for a fixed length of time. Code is parsed before insertion to ensure it is functional.
-                </li>
-                <li>
-                    <b>Preview in Toyhouse&apos;s colour themes and page layouts:</b> Toyhouse allows code to be displayed in a wide range of colour theme and layout contexts. The code editor supports previewing code in various themes and layouts to get an accurate view of the code in situ. It also supports mobile screen code previewing.
-                </li>
-                <li>
-                    <b>Customisable, accessible code editor UI:</b> The code editor provides several layouts, docking the editor in different parts of the screen, popping the preview out into a separate window. It also offers light, dark, low-contrast and large-text modes for accessibility.
-                </li>
-            </ul>
+            <li>
+                <b>Genetics system:</b> ChickenPet&apos;s central mechanic is its genetics system. Chickens have colour and trait genes that are inherited by offspring in complex relations. Some genes are recessive and can only be hatched by parents with specific genes.
+            </li>
+            <li>
+                <b>Social features:</b> ChickenPet has a public marketplace, forums, chicken-trading, and raffle mechanics that allow players to trade chickens and items.
+            </li>
+            <li>
+                <b>Moderation and developer ticket tools:</b> ChickenPet has robust tools for moderation and curating the play experience, such as a ticket system for reporting bugs, a dev tracker, user blocking features that wrap site functions, and an upcoming authorisation list feature for fine-tuning access to shop listings.
+            </li>
+            <li>
+                <b>Minigames:</b> ChickenPet has a minigames.  Minigames incorporate members of the user&apos;s coop and affect other site functions like shop prices. Among these games, players can bring chickens on adventures, organise heists to steal currency, and find missings chicken on a tile board.
+            </li>
+        </ul>
     },
     {
-        title: "Interactive Commission Estimates",
-        url: "https://circlejourney.net/commissions",
-        created: "2023",
-        highlight: true,
-        thumbnail_src: "/projects/comms-thumb.jpg",
-        thumbnail_alt: "Screenshot of interactive commission estimates app",
-        skills: "React.js, HTML, CSS, PHP",
-        gallery: [{
-            src: "/projects/comms-1.jpg",
-            alt: "Screenshot of interactive commission estimates app"
-        },{
-            src: "/projects/comms-2.jpg",
-            alt: "Screenshot of interactive commission estimates app"
-        },{
-            src: "/projects/comms-3.jpg",
-            alt: "Screenshot of interactive commission estimates app"
-        }],
-        short_description: "An interactive art commission pricing estimate generator made with React.js.",
-        description: (<>
-            <p>
-                As a freelance artist, I created this web application for clients to view instant estimates for my art services before contacting me to order.
-                This tool showcases my artwork to entice viewers while also providing inormation about pricing in various currencies.
-            </p>
-        </>),
-        features: <ul className="list-disc list-inside">
-                <li>
-                    <b>Currency conversion with Exchange Rate API:</b> Since my clients are based in different countries, the app is integrated with the Exchange Rate API to support previewing prices in different home currencies. API results are cached daily via my website&apos;s PHP backend to reduce the number of API requests.
-                </li>
-                <li>
-                    <b>Image preview lightbox:</b> To allow users to art samples at a larger size as well as browse through collections of samples for the same styles, I implemented a lightbox that is easily scrollable.
-                </li>
-                <li>
-                    <b>&ldquo;Order now&rdquo; link:</b> When an art style is selected, the app generates a convenient hyperlink that autofills the PHP-based commission inquiry form on my website.
-                </li>
-            </ul>
-    },
-    {
-        title: "OzCHI Conference Website",
+        title: "OzCHI Conference",
         url: "https://ozchi.org",
         skills: "PHP, HTML, CSS, JavaScript + jQuery",
         thumbnail_src: "/projects/OzCHI-thumb.jpg",
@@ -234,6 +165,75 @@ const projectList = [
         }]
     },
     {
+        title: "Interactive Commission Estimates",
+        url: "https://circlejourney.net/commissions",
+        created: "2023",
+        highlight: true,
+        thumbnail_src: "/projects/comms-thumb.jpg",
+        thumbnail_alt: "Screenshot of interactive commission estimates app",
+        skills: "React.js, HTML, CSS, PHP",
+        gallery: [{
+            src: "/projects/comms-1.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        },{
+            src: "/projects/comms-2.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        },{
+            src: "/projects/comms-3.jpg",
+            alt: "Screenshot of interactive commission estimates app"
+        }],
+        short_description: "An interactive application for previewing art samples and instantly creating art commission estimates.",
+        description: (<>
+            <p>
+                As a freelance artist, I created this web application for clients to view instant estimates for my art services before contacting me to order.
+                This tool showcases my artwork to entice viewers while also providing inormation about pricing in various currencies.
+            </p>
+        </>),
+        features: <ul className="list-disc list-inside">
+                <li>
+                    <b>Currency conversion with Exchange Rate API:</b> Since my clients are based in different countries, the app is integrated with the Exchange Rate API to support previewing prices in different home currencies. API results are cached daily via my website&apos;s PHP backend to reduce the number of API requests.
+                </li>
+                <li>
+                    <b>Image preview lightbox:</b> To allow users to art samples at a larger size as well as browse through collections of samples for the same styles, I implemented a lightbox that is easily scrollable.
+                </li>
+                <li>
+                    <b>&ldquo;Order now&rdquo; link:</b> When an art style is selected, the app generates a convenient hyperlink that autofills the PHP-based commission inquiry form on my website.
+                </li>
+            </ul>
+    },
+    {
+        title: "Live Code Editor",
+        url: "https://th.circlejourney.net",
+        created: "2020",
+        highlight: true,
+        thumbnail_src: "/projects/THeditor-thumb.jpg",
+        thumbnail_alt: "Screenshot of the Toyhouse Live Code Edtor",
+        skills: "PHP, jQuery, HTML, CSS",
+        stats: [ <>2,500,000 <FontAwesomeIcon icon={faEye}/></>, <>23 <FontAwesomeIcon icon={faStar}/></> ],
+        gallery: [{
+            src: "/projects/THeditor-1.jpg",
+            alt: "Caring for the Carer website screenshot"
+        }],
+        short_description: "A HTML/CSS editor with live visual preview, helping coders customise Toyhouse webpages.",
+        description: (<>
+            <p>
+                I develop and maintain the Toyhouse Live Code Editor, a HTML and CSS editor with a visual preview window that helps coders design webpages for Toyhouse.
+                Toyhouse is a creativity-focused website where users (often unfamiliar with code) may customise webpages with HTML and CSS. With a live-refreshing preview code, this tool helps users create visually rich pages.
+            </p>
+        </>),
+        features: <ul className="list-disc list-inside">
+                <li>
+                    <b>Live code preview:</b> The preview frame refreshes with the user&apos;s latest code after the user idles for a fixed length of time. Code is parsed before insertion to ensure it is functional.
+                </li>
+                <li>
+                    <b>Preview in Toyhouse&apos;s colour themes and page layouts:</b> Toyhouse allows code to be displayed in a wide range of colour theme and layout contexts. The code editor supports previewing code in various themes and layouts to get an accurate view of the code in situ. It also supports mobile screen code previewing.
+                </li>
+                <li>
+                    <b>Customisable, accessible code editor UI:</b> The code editor provides several layouts, docking the editor in different parts of the screen, popping the preview out into a separate window. It also offers light, dark, low-contrast and large-text modes for accessibility.
+                </li>
+            </ul>
+    },
+    {
         title: "Circlejourney: Homepage",
         url: "https://circlejourney.net",
         skills: "Laravel, PHP, HTML, CSS, JavaScript + jQuery",
@@ -271,7 +271,7 @@ const projectList = [
         created: "2023",
         description: <>
             <p>
-                This templating framework was created for individuals with low to moderate familiarity with HTML and PHP to self-publish novels and short fiction. Configured with JSON files with written content added with HTML, it runs out of the box on a PHP server. It provides a single-page view of all chapters and a dark and light mode colour theme toggles.
+                This templating framework was made for people with low-to-moderate familiarity with coding to self-publish novels and short fiction. Configured with JSON and HTML files for written content, it runs out of the box on a PHP server, providing a single-page view of all chapters and a dark/light mode colour theme toggles.
             </p>
         </>
     }
