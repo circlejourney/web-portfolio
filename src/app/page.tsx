@@ -2,30 +2,28 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Project from "../components/Project";
 import NavButton from "../components/NavButton";
 import { useState } from "react";
 import ProjectInterface from "../interfaces/ProjectInterface";
 import ProjectPanel from "../components/ProjectPanel";
 import projectList from "../data/projectList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare, faEnvelope, faHouse, faRectangleList } from "@fortawesome/free-solid-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Header from "../components/Header";
-import BorderCard from "../components/BorderCard";
 import Modal from "../components/Modal";
 import Lightbox from "../components/Lightbox";
 import ImageInterface from "../interfaces/ImageInterface";
-import InlineHeaderContent from "../components/InlineHeaderContent";
-import ProjectCard from "../components/ProjectCard";
 import AllProjects from "../components/AllProjects";
+import About from "../sections/About";
+import Contact from "../sections/Contact";
+import Projects from "../sections/Projects";
+import Home from "../sections/Home";
 
-export default function Home() {
+export default function App() {
   
   const [project, setProject] = useState<ProjectInterface|null>(null);
   const [viewingImage, setViewingImage] = useState<ImageInterface|null>(null);
   const [projectListOpen, setProjectListOpen] = useState<boolean>(false);
-
   const highlightProjects = projectList.filter(project => project.highlight);
 
   return (
@@ -61,7 +59,8 @@ export default function Home() {
               <div className="flex md:flex-col flex-wrap gap-2 mt-4 justify-center text-center">
                 <NavButton href="#home" handleClick={smoothScroll}>Home</NavButton>
                 <NavButton href="#projects" handleClick={smoothScroll}>Projects</NavButton>
-                <NavButton href="#contact" handleClick={smoothScroll}>Contact Me</NavButton>
+                <NavButton href="#about" handleClick={smoothScroll}>About Me</NavButton>
+                <NavButton href="#contact" handleClick={smoothScroll}>Contact</NavButton>
               </div>
               
               <div className="mt-4 text-xl">
@@ -81,68 +80,14 @@ export default function Home() {
         </div>
         
         <div id="scrollable" className="px-6 md:py-10 md:pl-20 md:pr-30 w-full md:w-3/4">
-
-          <div id="home" className="font-normal md:flex-row md:my-15">
-            
-            <Header icon={faHouse} header={"Home"}/>
-            
-            <div className="text-[16px]/10">
-              <p className="font-light">
-                I&apos;m Amari, a full stack web developer who loves making visually appealing, creativity-oriented and informative websites.
-                Currently, I am a web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design, develop and maintain new features for more than 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with 1,500 players, featuring trading, forums, and raffle mechanics.
-              </p>
-
-              <BorderCard className="text-[15px] leading-8 mx-4 my-8" header="Skills">
-                <ul className="list-disc list-inside font-light">
-                  <li>
-                    <span className="font-semibold">5+ years&apos; experience</span> in PHP, MySQL, JavaScript, HTML, and CSS
-                  </li>
-                  <li>
-                    <span className="font-semibold">2 years&apos; experience</span> in Laravel, Typescript, React.js, and Next.js
-                  </li>
-                  <li>
-                    <span className="font-semibold">Research-backed, user-centred design:</span> I&apos;ve conducted PhD research into improving interaction design practices for affective connection.
-                  </li>
-                  <li>
-                    <span className="font-semibold">Leadership and project management skills:</span> I have experience coordinating research, user-testing, and projects with complex goals and deliverables.
-                  </li>
-                  <li>
-                    <span className="font-semibold">Motivated independent learner:</span> As a self-taught web developer, I&apos;m confident upskilling and learning frameworks independently with minimal guidance.
-                  </li>
-                </ul>
-              </BorderCard>
-              
-            </div>
-
-          </div>
-
           
-          <div id="projects" className="font-normal md:flex-row my-15">
-            <Header icon={faRectangleList} header={"Projects"}/>
-            
-            <div className="py-4 flex flex-col gap-4">
-              {highlightProjects.map((project) => <Project project={project} key={project.title} setProject={setProject} />)}
-              <ProjectCard className="text-2xl order-2 wrap-break-word" onClick={()=>setProjectListOpen(true)}>
-                View all projects ({projectList.length})
-              </ProjectCard>
-            </div>
-          </div>
+          <Home />
           
+          <Projects highlightProjects={highlightProjects} setProject={setProject} setProjectListOpen={setProjectListOpen} />
           
-          <div id="contact" className="font-normal md:flex-row my-15">
-            <Header icon={faEnvelope} header={"Contact Me"}/>
-            
-              <ul className="list-inside list-disc">
-                <li>
-                  <InlineHeaderContent header="Email">circlejourneyart@gmail.com</InlineHeaderContent>
-                </li>
-                <li>
-                  <InlineHeaderContent header="LinkedIn">
-                    <Link href="https://www.linkedin.com/in/amari-l-29494b87/" target="linkedin">linkedin.com/in/amari-l-29494b87 <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>
-                  </InlineHeaderContent>
-                </li>
-              </ul>
-          </div>
+          <About />
+          
+          <Contact/>
 
         </div>
         
