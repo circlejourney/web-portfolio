@@ -202,7 +202,7 @@ const projectList = [
             </ul>
     },
     {
-        title: "Live Code Editor",
+        title: "Toyhouse Live Code Editor",
         url: "https://th.circlejourney.net",
         created: "2020",
         highlight: true,

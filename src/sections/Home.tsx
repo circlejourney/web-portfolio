@@ -1,22 +1,20 @@
-import { faArrowUpRightFromSquare, faHouse } from "@fortawesome/free-solid-svg-icons";
-import Header from "../components/Header";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
 
     return (<div id="home" className="font-normal md:flex-row md:my-15">
-            
-        <Header icon={faHouse} header={"Home"}/>
         
         <div className="text-[16px]/8 font-light">
             
-            <p className="mb-6">
-            I&apos;m Amari, a full stack web developer who loves making visually appealing, easy-to-use websites for creativity and learning.
+            <p className="text-lg mb-6">
+            🐳
+            <b>Hello, I&apos;m Amari!</b> I&apos;m a full stack web developer who loves making visually appealing, easy-to-use websites for social communities, creativity and research communication.
             </p>
             
             <p className="mb-6">
-                I believe websites should always be a delight to use. I love adding personality and flair to everything I create, drawing on my experience as a visual artist and interaction design researcher to create seamless, pleasurable web experiences without compromising on performance and security.
+                I believe great websites should be a delight to use. With my foundation in visual art and interaction design research, I craft web experiences that are seamless and full of personality without compromising on performance and security.
             </p>
             
             <p className="mb-6">

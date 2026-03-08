@@ -58,7 +58,7 @@ export default function App() {
               </h1>
               
               <div className="mb-5">
-                Web developer making visually-appealing creative and informative websites
+                I build delightful, performant websites for researchers, creatives, and social communities.
               </div>
 
 
