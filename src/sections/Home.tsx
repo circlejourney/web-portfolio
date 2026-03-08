@@ -14,11 +14,11 @@ export default function Home() {
             </p>
             
             <p className="mb-6">
-                I believe great websites should be a delight to use. With my foundation in visual art and interaction design research, I craft web experiences that are seamless and full of personality without compromising on performance and security.
+                I believe great websites should be a delight to use. With my foundation in visual art and interaction design research, I craft web experiences that are seamless and pleasurable without compromising on performance and security.
             </p>
             
             <p className="mb-6">
-            Currently, I&apos;m a web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design and develop major new features for more tha 600,000 users. I am also the founder and solo web developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, and raffle mechanics.
+            I&apos;m a web developer at <Link href="https://artfight.net" target="_blank">Art Fight <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, where I design and develop major new features for more than 600,000 users. I&apos;m also the founder and solo developer of <Link href="https://chicken.pet" target="_blank">ChickenPet <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></Link>, a game website with trading, forums, and raffle mechanics.
             </p>
             
         </div>
