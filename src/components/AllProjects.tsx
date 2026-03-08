@@ -39,7 +39,7 @@ export default function AllProjects({projectList}: { projectList: ProjectInterfa
                             {project.description}
                         </div>
                     </div>
-                    <div className="font-light text-gray-700 dark:text-gray-300 mt-auto pt-2 flex gap-[1em] flex-wrap">
+                    <div className="font-light text-gray-700 dark:text-gray-300 mt-auto pt-2 flex gap-1 flex-wrap">
                         {project.stats ? <StatBar stats={project.stats}/> : null}
                         {project.skills.split(/,\s*/).map( skill => <UnderlineBadge className="mr-2" key={skill}>{skill}</UnderlineBadge> )}
                     </div>
