@@ -8,6 +8,7 @@
   --accent-bg-2: #c9d7dd;
   --header: #24506B;
   --link-colour: #9c5a2b;
+  --link-highlight-colour: #b95107;
 }
 
 @theme inline {
@@ -28,6 +29,7 @@
     --accent-bg-2: #24506B;
     --header: #5995a4;
     --link-colour: #d8874a;
+    --link-highlight-colour: #ff994b;
   }
 }
 
@@ -39,6 +41,10 @@ body {
 
 a {
   color: var(--link-colour);
+}
+
+a:hover {
+  color: var(--link-highlight-colour);
 }
 
 .text-link {

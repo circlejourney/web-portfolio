@@ -205,6 +205,17 @@ const projectList = [
                 As a Web and Social Media chair for OzCHI since 2024, I have been in charge of designing, developing, and maintaining the website as its hub of information for presenters and attendees. I liaise with other conference chairs to ensure all information is up-to-date and accurate, and I design layouts that present lots of information concisely.
             </p>
         </>,
+        features: <ul className="list-disc list-inside">
+            <li>
+                <b>Templating engine:</b> Because this website needs to be updated rapidly with newly-released information, I programmed a PHP templater to rapidly scaffold consistent webpage layouts with shared data, dependencies and visual elements, allowing for quick creation and revision of webpages.
+            </li>
+            <li>
+                <b>Plain PHP for interoperability:</b> OzCHI&apos;s organisation team changes yearly, so webpages are coded in vanilla PHP, HTML and JavaScript to ensure they are easily readable and iterated on by future developers who may not be in contact with past developers.
+            </li>
+            <li>
+                <b>Detailed conference program layouts:</b> I designed layouts that present OzCHI&apos;s five-day schedules concisely and comprehensibly. Annually, OzCHI features dozens of talks, workshops, and all-day poster presentations and the program is crucial for helping attendees navigate the venue and help.
+            </li>
+        </ul>,
         gallery: [{
             src: "/projects/OzCHI-2.jpg",
             alt: "Screenshot of OzCHI 2025 website"

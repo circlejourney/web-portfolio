@@ -44,20 +44,26 @@ export default function ProjectPanel({project, setViewingImage}: {
         <div className="flex flex-col md:flex-row gap-1 mb-6">
             { project.position?
                 <BorderCard className="grow md:basis-0 text-center md:text-left">
-                    <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
+                    <div>
+                        <InlineHeaderContent header="Position">{project.position}</InlineHeaderContent>
+                    </div>
                 </BorderCard> : null }
 
             <BorderCard className="grow md:basis-0 text-center md:text-left">
-                <InlineHeaderContent header="Skills">
-                    {project.skills}
-                </InlineHeaderContent>
+                <div>
+                    <InlineHeaderContent header="Skills">
+                        {project.skills}
+                    </InlineHeaderContent>
+                </div>
             </BorderCard>
 
             { project.client ? 
             <BorderCard className="grow md:basis-0 text-center md:text-left">
-                <InlineHeaderContent header="Company">
-                    {project.client}
-                </InlineHeaderContent>
+                <div>
+                    <InlineHeaderContent header="Company">
+                        {project.client}
+                    </InlineHeaderContent>
+                </div>
             </BorderCard>
             : null }
         </div>
