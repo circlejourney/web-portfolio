@@ -58,7 +58,7 @@ export default function App() {
               </h1>
               
               <div className="mb-5">
-                Full stack web developer specialising in creative and research-centred websites
+                Web developer making visually-appealing creative and informative websites
               </div>
 
 
