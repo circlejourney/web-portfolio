@@ -18,13 +18,19 @@ export default function About() {
                     <span className="font-semibold">Research-backed, user-centred design:</span> I&apos;ve conducted PhD research into improving interaction design practices for affective connection.
                     </li>
                     <li>
-                    <span className="font-semibold">Leadership and project management skills:</span> I have experience coordinating research, user-testing, and projects with complex goals and deliverables.
-                    </li>
-                    <li>
                     <span className="font-semibold">Motivated independent learner:</span> As a self-taught web developer, I&apos;m confident upskilling and learning frameworks independently with minimal guidance.
                     </li>
                 </ul>
             </BorderCard>
+
+            <BorderCard className="text-[15px] leading-8 mx-4 my-8" header="Qualifications">
+                <ul className="list-disc list-inside font-light">
+                    <li><span className="font-semibold">Doctor of Philosophy</span>: Human-Computer Interaction and Interaction Design</li>
+                    <li><span className="font-semibold">Master of Fine Arts</span>: Interactive Media</li>
+                    <li><span className="font-semibold">Bachelor of Fine Arts (1st Class Honours)</span>: Digital Animation</li>
+                </ul>
+            </BorderCard>
+        
         </div>
     )
 }
