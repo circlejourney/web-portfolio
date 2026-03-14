@@ -48,7 +48,7 @@ a:hover {
 }
 
 .text-link {
-  color: #d8874a;
+  color: var(--link-colour);
 }
 
 .bg-foreground {
