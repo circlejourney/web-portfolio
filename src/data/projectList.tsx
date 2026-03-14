@@ -28,7 +28,7 @@ const projectList = [
         position: "Web Developer (2025 - present)",
         client: "Art Fight LLC",
         stats: [ <>600,000 <FontAwesomeIcon icon={faUser}/></> ],
-        skills: "Laravel, PHP, Node.JS + NPM, HTML, CSS, Git",
+        skills: "Laravel, PHP, Node.js + NPM, HTML, CSS, Git",
         short_description: "An annual online game where players draw art for each other to earn points.",
         description: (<>
             <p>

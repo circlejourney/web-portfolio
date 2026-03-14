@@ -14,7 +14,7 @@ export default function Home() {
             </p>
             
             <p className="mb-6">
-                I believe great websites should be a delight to use. With my foundation in visual art and interaction design research, I craft web experiences that are seamless and pleasurable without compromising on performance and security.
+                I believe great websites should be a delight to use. With my foundation in visual art and interaction design research, I craft web experiences that function seamlessly without compromising on performance and security.
             </p>
             
             <p className="mb-6">
