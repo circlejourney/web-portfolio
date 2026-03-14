@@ -1,9 +1,11 @@
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
-
 
 const lexend = Lexend({
   subsets: ["latin-ext"],
